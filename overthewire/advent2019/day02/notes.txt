@@ -1,0 +1,31 @@
+Challenges: https://advent2019.overthewire.org/dashboard/challenges/
+
+Summer ADVENTure
+crypto
+rev
+network
+misc
+Points: 368
+
+Solves: 31
+
+An elf is tired of snow and wanted to visit summer... in an online RPG at least. Could you help him beat the game?
+settings Service: http://3.93.128.89:12020
+Author: hpmv
+1
+HackingForSoju 2019-12-03 03:34:09
+
+2
+Maple Bacon 2019-12-03 08:18:21
+
+3
+Spotless 2019-12-03 20:35:02
+
+announcement 2019-12-02 18:41:44 UTCSummer ADVENTure
+Extra clarification, please read this: https://docs.google.com/document/d/1wYlM2ideh5R5I7KDTLFTu_NLQmAJAmV-hVjNlmAOIEY
+
+announcement 2019-12-02 16:45:06 UTCSummer ADVENTure
+If you connect to 12022 to create a fake server, see nothing but a server ID, and use that fake server to login on the UI but the UI does nothing, this is intended behavior. After seeing the server ID, the TCP connection to 12022 serves as the games connection, and you must act as the real server at that point. There is no default implementation for the fake server; you must do everything the client expects from the server in order for it to work.
+
+
+Proxy real client to real server via fake server. Read traffic.
