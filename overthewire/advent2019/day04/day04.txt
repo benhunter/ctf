@@ -1,0 +1,4 @@
+Cowsay linux command loads perl scripts as its .cow templates.
+
+1. Choose the custom cow and go to the cow_designer page.
+2. Solution is to terminate the template with 'EOC', then run perl to dump the flag.
