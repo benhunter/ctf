@@ -1,0 +1,1209 @@
+2020-05-03 17:12:49.0 org.sleuthkit.autopsy.centralrepository.datamodel.RdbmsCentralRepo upgradeSchema
+INFO: Central Repository is up to date
+2020-05-03 17:12:49.211 org.sleuthkit.autopsy.keywordsearch.Server isRunning
+INFO: Solr server is running
+2020-05-03 17:12:49.807 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB setPragmas
+INFO: sqlite-jdbc version 3.25.2 loaded in native mode
+2020-05-03 17:12:49.83 org.sleuthkit.autopsy.casemodule.Case openAsCurrentCase
+INFO: Opened ACI CTF Needle (aci_ctf_needle_20200503_165551) in C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle as the current case
+2020-05-03 17:12:51.538 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.15.0
+2020-05-03 17:12:51.543 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.15.0
+2020-05-03 17:12:51.548 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Drone Analyzer, version = 4.15.0
+2020-05-03 17:12:51.553 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.15.0
+2020-05-03 17:12:51.559 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.15.0
+2020-05-03 17:12:51.564 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.15.0
+2020-05-03 17:12:51.569 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.15.0
+2020-05-03 17:12:51.574 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.15.0
+2020-05-03 17:12:51.579 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.15.0
+2020-05-03 17:12:51.585 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.15.0
+2020-05-03 17:12:51.59 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2020-05-03 17:12:51.596 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.15.0
+2020-05-03 17:12:51.601 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.15.0
+2020-05-03 17:12:51.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.15.0
+2020-05-03 17:12:51.603 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.15.0
+2020-05-03 17:12:51.604 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.15.0
+2020-05-03 17:13:03.944 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Module, version = 1.2
+2020-05-03 17:13:03.944 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Convert Hiber/Crash Module, version = 1.0
+2020-05-03 17:13:03.945 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Dump File Module, version = 1.2
+2020-05-03 17:13:03.945 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.15.0
+2020-05-03 17:13:03.945 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2020-05-03 17:13:48.172 org.sleuthkit.autopsy.ingest.IngestPipelinesConfiguration getInstance
+INFO: Creating ingest module loader instance
+2020-05-03 17:13:48.266 org.sleuthkit.autopsy.ingest.IngestMonitor$MonitorTimerAction logMonitoredRootDirectory
+INFO: Monitoring disk space of C:\
+2020-05-03 17:13:48.267 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 0
+2020-05-03 17:13:48.351 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer loadConfigFile
+INFO: Load successful
+2020-05-03 17:13:48.4 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Module ingest module for job 0
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py", line 156, in startUp
+    Plugins = Plugins.replace("[", "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+	org.python.core.Py.AttributeError(Py.java:205)
+	org.python.core.PyObject.noAttributeError(PyObject.java:1013)
+	org.python.core.PyObject.__getattr__(PyObject.java:1008)
+	Volatility$py.startUp$14(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py:193)
+	Volatility$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility$VolatilityIngestModule$6.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:13:48.402 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Convert Hiber/Crash Module ingest module for job 0
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Convert.py", line 171, in startUp
+    self.log(Level.INFO, "Volatility Executable ==> " + self.local_settings.getSetting('Volatility_Directory'))
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+
+	org.python.core.Py.TypeError(Py.java:259)
+	org.python.core.PyObject._basic_add(PyObject.java:2141)
+	org.python.core.PyObject._add(PyObject.java:2119)
+	Volatility_Convert$py.startUp$18(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Convert.py:182)
+	Volatility_Convert$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Convert.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility_Convert$VolatilityDumpIngestModule$14.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:13:48.403 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Dump File Module ingest module for job 0
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py", line 157, in startUp
+    Plugins = Plugins.replace("[", "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+	org.python.core.Py.AttributeError(Py.java:205)
+	org.python.core.PyObject.noAttributeError(PyObject.java:1013)
+	org.python.core.PyObject.__getattr__(PyObject.java:1008)
+	Volatility_Dump$py.startUp$14(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py:198)
+	Volatility_Dump$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility_Dump$VolatilityDumpIngestModule$20.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:13:48.403 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Ingest job 0 could not be started
+2020-05-03 17:14:29.098 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.15.0
+2020-05-03 17:14:29.098 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.15.0
+2020-05-03 17:14:29.098 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Drone Analyzer, version = 4.15.0
+2020-05-03 17:14:29.098 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.15.0
+2020-05-03 17:14:29.098 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.15.0
+2020-05-03 17:14:29.098 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.15.0
+2020-05-03 17:14:29.099 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.15.0
+2020-05-03 17:14:29.099 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.15.0
+2020-05-03 17:14:29.099 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.15.0
+2020-05-03 17:14:29.099 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.15.0
+2020-05-03 17:14:29.099 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2020-05-03 17:14:29.099 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.15.0
+2020-05-03 17:14:29.099 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.15.0
+2020-05-03 17:14:29.099 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.15.0
+2020-05-03 17:14:29.099 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.15.0
+2020-05-03 17:14:29.099 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.15.0
+2020-05-03 17:14:29.514 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Module, version = 1.2
+2020-05-03 17:14:29.515 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Convert Hiber/Crash Module, version = 1.0
+2020-05-03 17:14:29.515 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Dump File Module, version = 1.2
+2020-05-03 17:14:29.516 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.15.0
+2020-05-03 17:14:29.516 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2020-05-03 17:15:44.352 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 1
+2020-05-03 17:15:44.355 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer loadConfigFile
+INFO: Load successful
+2020-05-03 17:15:44.363 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Module ingest module for job 1
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py", line 156, in startUp
+    Plugins = Plugins.replace("[", "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+	org.python.core.Py.AttributeError(Py.java:205)
+	org.python.core.PyObject.noAttributeError(PyObject.java:1013)
+	org.python.core.PyObject.__getattr__(PyObject.java:1008)
+	Volatility$py.startUp$14(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py:193)
+	Volatility$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility$VolatilityIngestModule$37.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:15:44.364 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Convert Hiber/Crash Module ingest module for job 1
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Convert.py", line 171, in startUp
+    self.log(Level.INFO, "Volatility Executable ==> " + self.local_settings.getSetting('Volatility_Directory'))
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+
+	org.python.core.Py.TypeError(Py.java:259)
+	org.python.core.PyObject._basic_add(PyObject.java:2141)
+	org.python.core.PyObject._add(PyObject.java:2119)
+	Volatility_Convert$py.startUp$18(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Convert.py:182)
+	Volatility_Convert$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Convert.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility_Convert$VolatilityDumpIngestModule$41.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:15:44.364 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Dump File Module ingest module for job 1
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py", line 157, in startUp
+    Plugins = Plugins.replace("[", "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+	org.python.core.Py.AttributeError(Py.java:205)
+	org.python.core.PyObject.noAttributeError(PyObject.java:1013)
+	org.python.core.PyObject.__getattr__(PyObject.java:1008)
+	Volatility_Dump$py.startUp$14(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py:198)
+	Volatility_Dump$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility_Dump$VolatilityDumpIngestModule$44.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:15:44.365 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Ingest job 1 could not be started
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Drone Analyzer, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.15.0
+2020-05-03 17:16:01.979 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.15.0
+2020-05-03 17:16:01.98 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.15.0
+2020-05-03 17:16:01.98 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.15.0
+2020-05-03 17:16:02.391 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Module, version = 1.2
+2020-05-03 17:16:02.391 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Convert Hiber/Crash Module, version = 1.0
+2020-05-03 17:16:02.392 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Dump File Module, version = 1.2
+2020-05-03 17:16:02.392 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.15.0
+2020-05-03 17:16:02.392 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2020-05-03 17:16:29.572 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 2
+2020-05-03 17:16:29.574 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer loadConfigFile
+INFO: Load successful
+2020-05-03 17:16:29.59 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Module ingest module for job 2
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py", line 156, in startUp
+    Plugins = Plugins.replace("[", "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+	org.python.core.Py.AttributeError(Py.java:205)
+	org.python.core.PyObject.noAttributeError(PyObject.java:1013)
+	org.python.core.PyObject.__getattr__(PyObject.java:1008)
+	Volatility$py.startUp$14(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py:193)
+	Volatility$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility$VolatilityIngestModule$51.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:16:29.59 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Convert Hiber/Crash Module ingest module for job 2
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Convert.py", line 171, in startUp
+    self.log(Level.INFO, "Volatility Executable ==> " + self.local_settings.getSetting('Volatility_Directory'))
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+
+	org.python.core.Py.TypeError(Py.java:259)
+	org.python.core.PyObject._basic_add(PyObject.java:2141)
+	org.python.core.PyObject._add(PyObject.java:2119)
+	Volatility_Convert$py.startUp$18(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Convert.py:182)
+	Volatility_Convert$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Convert.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility_Convert$VolatilityDumpIngestModule$55.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:16:29.591 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Dump File Module ingest module for job 2
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py", line 157, in startUp
+    Plugins = Plugins.replace("[", "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+	org.python.core.Py.AttributeError(Py.java:205)
+	org.python.core.PyObject.noAttributeError(PyObject.java:1013)
+	org.python.core.PyObject.__getattr__(PyObject.java:1008)
+	Volatility_Dump$py.startUp$14(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py:198)
+	Volatility_Dump$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility_Dump$VolatilityDumpIngestModule$58.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:16:29.591 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Ingest job 2 could not be started
+2020-05-03 17:16:54.909 org.sleuthkit.autopsy.contentviewers.FileViewer isSupported
+INFO: Mimetype not known for file: ram.img
+2020-05-03 17:16:59.628 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.15.0
+2020-05-03 17:16:59.628 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.15.0
+2020-05-03 17:16:59.628 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Drone Analyzer, version = 4.15.0
+2020-05-03 17:16:59.628 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.15.0
+2020-05-03 17:16:59.628 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.15.0
+2020-05-03 17:16:59.628 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.15.0
+2020-05-03 17:16:59.629 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.15.0
+2020-05-03 17:16:59.629 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.15.0
+2020-05-03 17:16:59.629 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.15.0
+2020-05-03 17:16:59.629 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.15.0
+2020-05-03 17:16:59.629 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2020-05-03 17:16:59.629 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.15.0
+2020-05-03 17:16:59.629 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.15.0
+2020-05-03 17:16:59.629 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.15.0
+2020-05-03 17:16:59.629 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.15.0
+2020-05-03 17:16:59.629 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.15.0
+2020-05-03 17:17:00.012 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.15.0
+2020-05-03 17:17:00.012 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2020-05-03 17:17:00.012 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Module, version = 1.2
+2020-05-03 17:17:00.012 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Convert Hiber/Crash Module, version = 1.0
+2020-05-03 17:17:00.012 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Dump File Module, version = 1.2
+2020-05-03 17:17:36.626 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 3
+2020-05-03 17:17:36.626 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Module ingest module for job 3
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py", line 156, in startUp
+    Plugins = Plugins.replace("[", "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+	org.python.core.Py.AttributeError(Py.java:205)
+	org.python.core.PyObject.noAttributeError(PyObject.java:1013)
+	org.python.core.PyObject.__getattr__(PyObject.java:1008)
+	Volatility$py.startUp$14(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py:193)
+	Volatility$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility$VolatilityIngestModule$69.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:17:36.627 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Ingest job 3 could not be started
+2020-05-03 17:18:49.837 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Drone Analyzer, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.15.0
+2020-05-03 17:18:49.838 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.15.0
+2020-05-03 17:18:50.228 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.15.0
+2020-05-03 17:18:50.228 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2020-05-03 17:18:50.229 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Module, version = 1.2
+2020-05-03 17:18:50.229 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Convert Hiber/Crash Module, version = 1.0
+2020-05-03 17:18:50.229 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Dump File Module, version = 1.2
+2020-05-03 17:19:15.754 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 4
+2020-05-03 17:19:15.981 VolatilityIngestModule startUp
+INFO: List Box Entry Starts here =====>
+2020-05-03 17:19:15.981 VolatilityIngestModule startUp
+INFO: [u'apihooks']
+2020-05-03 17:19:15.982 VolatilityIngestModule startUp
+INFO: apihooks
+2020-05-03 17:19:15.983 VolatilityIngestModule startUp
+INFO: <====== List Box Entry Ends here
+2020-05-03 17:19:15.983 VolatilityIngestModule startUp
+INFO: Volatility Executable ==> C:\Users\ben\Downloads\volatility_2.6_win64_standalone\volatility_2.6_win64_standalone.exe
+2020-05-03 17:19:15.984 VolatilityIngestModule startUp
+INFO: Volatility Profile to use ==> Win10x86
+2020-05-03 17:19:15.985 VolatilityIngestModule startUp
+INFO: Volatility Plugins to use ==> [u'apihooks']
+2020-05-03 17:19:15.986 VolatilityIngestModule startUp
+INFO: Additional Parms ==> 
+2020-05-03 17:19:15.997 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Starting first stage analysis (data source = LogicalFileSet1, objId = 1, jobId = 4)
+2020-05-03 17:19:15.997 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Scheduling first stage data source level analysis tasks (data source = LogicalFileSet1, objId = 1, jobId = 4)
+2020-05-03 17:19:15.998 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: Volatility Module analysis of LogicalFileSet1 (jobId=4) starting
+2020-05-03 17:19:16.0 VolatilityIngestModule process
+INFO: Starting to process, Just before call to parse_safari_history
+2020-05-03 17:19:16.002 VolatilityIngestModule process
+INFO: Number of files to process ==> 2
+2020-05-03 17:19:16.004 VolatilityIngestModule process
+INFO: File name to process is ==> AbstractContent [	objId 0000000001	name LogicalFileSet1	parentId -1		checkedHasChildren false	hasChildren false	childrenCount -1uniquePath null]	AbstractFile [		fileType VIRTUAL_DIR	ctime 0	crtime 0	mtime 0	atime 0	attrId 0	attrType TSK_FS_ATTR_TYPE_DEFAULT	dirFlag Allocated	dirType DIR	uid 0	gid 0	metaAddr 0	metaSeq 0	metaFlags [Allocated, Used]	metaType d	modes []	parentPath /	size 0	knownState UNKNOWN	md5Hash null	localPathSet false	localPath null	localAbsPath null	localFile null]	VirtualDirectory [	]	
+2020-05-03 17:19:16.005 VolatilityIngestModule process
+INFO: File name to process is ==> None
+2020-05-03 17:19:16.006 VolatilityIngestModule process
+INFO: File name to process is ==> AbstractContent [	objId 0000000002	name ram.img	parentId -1		checkedHasChildren false	hasChildren false	childrenCount -1uniquePath null]	AbstractFile [		fileType LOCAL	ctime 0	crtime 0	mtime 0	atime 0	attrId 0	attrType TSK_FS_ATTR_TYPE_DEFAULT	dirFlag Allocated	dirType REG	uid 0	gid 0	metaAddr 0	metaSeq 0	metaFlags [Allocated, Used]	metaType r	modes []	parentPath /	size 1073741824	knownState UNKNOWN	md5Hash null	localPathSet true	localPath C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img	localAbsPath C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img	localFile null]	LocalFile [	]	
+2020-05-03 17:19:16.007 VolatilityIngestModule process
+INFO: File name to process is ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img
+2020-05-03 17:19:16.008 VolatilityIngestModule process
+INFO: File name to process is ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img
+2020-05-03 17:19:16.009 VolatilityIngestModule process
+INFO: File Name ==> ram.img
+2020-05-03 17:19:16.009 VolatilityIngestModule process
+INFO: File Name ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput\Volatility\ram.db3
+2020-05-03 17:19:16.01 VolatilityIngestModule process
+INFO: Running program ==> C:\Users\ben\Downloads\volatility_2.6_win64_standalone\volatility_2.6_win64_standalone.exe -f C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img --profile=Win10x86 --output=sqlite --output-file=C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput\Volatility\ram.db3  apihooks
+2020-05-03 17:19:24.042 VolatilityIngestModule process
+INFO: Output from run is ==> No suitable address space mapping found
+Tried to open image as:
+ MachOAddressSpace: mac: need base
+ LimeAddressSpace: lime: need base
+ WindowsHiberFileSpace32: No base Address Space
+ WindowsCrashDumpSpace64BitMap: No base Address Space
+ WindowsCrashDumpSpace64: No base Address Space
+ HPAKAddressSpace: No base Address Space
+ VMWareMetaAddressSpace: No base Address Space
+ VirtualBoxCoreDumpElf64: No base Address Space
+ QemuCoreDumpElf: No base Address Space
+ VMWareAddressSpace: No base Address Space
+ WindowsCrashDumpSpace32: No base Address Space
+ Win10AMD64PagedMemory: No base Address Space
+ WindowsAMD64PagedMemory: No base Address Space
+ LinuxAMD64PagedMemory: No base Address Space
+ AMD64PagedMemory: No base Address Space
+ IA32PagedMemoryPae: No base Address Space
+ IA32PagedMemory: No base Address Space
+ OSXPmemELF: No base Address Space
+ MachOAddressSpace: MachO Header signature invalid
+ LimeAddressSpace: Invalid Lime header signature
+ WindowsHiberFileSpace32: No xpress signature found
+ WindowsCrashDumpSpace64BitMap: Header signature invalid
+ WindowsCrashDumpSpace64: Header signature invalid
+ HPAKAddressSpace: Invalid magic found
+ VMWareMetaAddressSpace: VMware metadata file is not available
+ VirtualBoxCoreDumpElf64: ELF Header signature invalid
+ QemuCoreDumpElf: ELF Header signature invalid
+ VMWareAddressSpace: Invalid VMware signature: 0xf000ff53
+ WindowsCrashDumpSpace32: Header signature invalid
+ Win10AMD64PagedMemory: Incompatible profile Win10x86 selected
+ WindowsAMD64PagedMemory: Incompatible profile Win10x86 selected
+ LinuxAMD64PagedMemory: Incompatible profile Win10x86 selected
+ AMD64PagedMemory: Incompatible profile Win10x86 selected
+ IA32PagedMemoryPae: No valid DTB found
+ IA32PagedMemory: No valid DTB found
+ OSXPmemELF: ELF Header signature invalid
+ FileAddressSpace: Must be first Address Space
+ ArmAddressSpace: No valid DTB found
+
+
+2020-05-03 17:19:24.043 VolatilityIngestModule process
+INFO: Path the volatility database file created ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput\Volatility\ram.db3
+2020-05-03 17:19:24.049 VolatilityIngestModule process
+INFO: Begin Create New Artifacts ==> APIHOOKS
+2020-05-03 17:19:24.051 VolatilityIngestModule process
+INFO: Result (APIHOOKS)
+2020-05-03 17:19:24.052 VolatilityIngestModule process
+INFO:  Number of Rows is 0 
+2020-05-03 17:19:24.055 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: Volatility Module analysis of LogicalFileSet1 (jobId=4) finished
+2020-05-03 17:19:24.056 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Finished first stage analysis (data source = LogicalFileSet1, objId = 1, jobId = 4)
+2020-05-03 17:19:24.056 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Finished analysis (data source = LogicalFileSet1, objId = 1, jobId = 4)
+2020-05-03 17:19:24.059 org.sleuthkit.autopsy.ingest.IngestManager finishIngestJob
+INFO: Ingest job 4 completed
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.15.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.15.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Drone Analyzer, version = 4.15.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.15.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.15.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.15.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.15.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.15.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.15.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.15.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2020-05-03 17:19:30.307 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.15.0
+2020-05-03 17:19:30.308 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.15.0
+2020-05-03 17:19:30.308 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.15.0
+2020-05-03 17:19:30.308 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.15.0
+2020-05-03 17:19:30.308 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.15.0
+2020-05-03 17:19:30.694 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.15.0
+2020-05-03 17:19:30.694 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2020-05-03 17:19:30.694 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Module, version = 1.2
+2020-05-03 17:19:30.694 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Convert Hiber/Crash Module, version = 1.0
+2020-05-03 17:19:30.694 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Dump File Module, version = 1.2
+2020-05-03 17:19:41.601 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.15.0
+2020-05-03 17:19:41.601 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.15.0
+2020-05-03 17:19:41.601 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Drone Analyzer, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.15.0
+2020-05-03 17:19:41.602 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.15.0
+2020-05-03 17:19:42.028 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.15.0
+2020-05-03 17:19:42.028 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2020-05-03 17:19:42.029 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Module, version = 1.2
+2020-05-03 17:19:42.029 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Convert Hiber/Crash Module, version = 1.0
+2020-05-03 17:19:42.029 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Dump File Module, version = 1.2
+2020-05-03 17:19:53.721 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 5
+2020-05-03 17:19:53.729 VolatilityIngestModule startUp
+INFO: List Box Entry Starts here =====>
+2020-05-03 17:19:53.73 VolatilityIngestModule startUp
+INFO: [u'apihooks']
+2020-05-03 17:19:53.731 VolatilityIngestModule startUp
+INFO: apihooks
+2020-05-03 17:19:53.732 VolatilityIngestModule startUp
+INFO: <====== List Box Entry Ends here
+2020-05-03 17:19:53.732 VolatilityIngestModule startUp
+INFO: Volatility Executable ==> C:\Users\ben\Downloads\volatility_2.6_win64_standalone\volatility_2.6_win64_standalone.exe
+2020-05-03 17:19:53.733 VolatilityIngestModule startUp
+INFO: Volatility Profile to use ==> Win10x86
+2020-05-03 17:19:53.733 VolatilityIngestModule startUp
+INFO: Volatility Plugins to use ==> [u'apihooks']
+2020-05-03 17:19:53.734 VolatilityIngestModule startUp
+INFO: Additional Parms ==> 
+2020-05-03 17:19:53.745 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Starting first stage analysis (data source = LogicalFileSet1, objId = 1, jobId = 5)
+2020-05-03 17:19:53.745 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Scheduling first stage data source level analysis tasks (data source = LogicalFileSet1, objId = 1, jobId = 5)
+2020-05-03 17:19:53.745 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: Volatility Module analysis of LogicalFileSet1 (jobId=5) starting
+2020-05-03 17:19:53.747 VolatilityIngestModule process
+INFO: Starting to process, Just before call to parse_safari_history
+2020-05-03 17:19:53.748 VolatilityIngestModule process
+INFO: Plaso Import Directory already exists C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput
+2020-05-03 17:19:53.749 VolatilityIngestModule process
+INFO: Number of files to process ==> 2
+2020-05-03 17:19:53.75 VolatilityIngestModule process
+INFO: File name to process is ==> AbstractContent [	objId 0000000001	name LogicalFileSet1	parentId -1		checkedHasChildren false	hasChildren false	childrenCount -1uniquePath null]	AbstractFile [		fileType VIRTUAL_DIR	ctime 0	crtime 0	mtime 0	atime 0	attrId 0	attrType TSK_FS_ATTR_TYPE_DEFAULT	dirFlag Allocated	dirType DIR	uid 0	gid 0	metaAddr 0	metaSeq 0	metaFlags [Allocated, Used]	metaType d	modes []	parentPath /	size 0	knownState UNKNOWN	md5Hash null	localPathSet false	localPath null	localAbsPath null	localFile null]	VirtualDirectory [	]	
+2020-05-03 17:19:53.751 VolatilityIngestModule process
+INFO: File name to process is ==> None
+2020-05-03 17:19:53.752 VolatilityIngestModule process
+INFO: File name to process is ==> AbstractContent [	objId 0000000002	name ram.img	parentId -1		checkedHasChildren false	hasChildren false	childrenCount -1uniquePath null]	AbstractFile [		fileType LOCAL	ctime 0	crtime 0	mtime 0	atime 0	attrId 0	attrType TSK_FS_ATTR_TYPE_DEFAULT	dirFlag Allocated	dirType REG	uid 0	gid 0	metaAddr 0	metaSeq 0	metaFlags [Allocated, Used]	metaType r	modes []	parentPath /	size 1073741824	knownState UNKNOWN	md5Hash null	localPathSet true	localPath C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img	localAbsPath C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img	localFile null]	LocalFile [	]	
+2020-05-03 17:19:53.752 VolatilityIngestModule process
+INFO: File name to process is ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img
+2020-05-03 17:19:53.753 VolatilityIngestModule process
+INFO: File name to process is ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img
+2020-05-03 17:19:53.753 VolatilityIngestModule process
+INFO: File Name ==> ram.img
+2020-05-03 17:19:53.754 VolatilityIngestModule process
+INFO: File Name ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput\Volatility\ram.db3
+2020-05-03 17:19:53.755 VolatilityIngestModule process
+INFO: Running program ==> C:\Users\ben\Downloads\volatility_2.6_win64_standalone\volatility_2.6_win64_standalone.exe -f C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img --profile=Win10x86 --output=sqlite --output-file=C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput\Volatility\ram.db3  apihooks
+2020-05-03 17:20:01.824 VolatilityIngestModule process
+INFO: Output from run is ==> No suitable address space mapping found
+Tried to open image as:
+ MachOAddressSpace: mac: need base
+ LimeAddressSpace: lime: need base
+ WindowsHiberFileSpace32: No base Address Space
+ WindowsCrashDumpSpace64BitMap: No base Address Space
+ WindowsCrashDumpSpace64: No base Address Space
+ HPAKAddressSpace: No base Address Space
+ VMWareMetaAddressSpace: No base Address Space
+ VirtualBoxCoreDumpElf64: No base Address Space
+ VMWareAddressSpace: No base Address Space
+ QemuCoreDumpElf: No base Address Space
+ WindowsCrashDumpSpace32: No base Address Space
+ Win10AMD64PagedMemory: No base Address Space
+ WindowsAMD64PagedMemory: No base Address Space
+ LinuxAMD64PagedMemory: No base Address Space
+ AMD64PagedMemory: No base Address Space
+ IA32PagedMemoryPae: No base Address Space
+ IA32PagedMemory: No base Address Space
+ OSXPmemELF: No base Address Space
+ MachOAddressSpace: MachO Header signature invalid
+ LimeAddressSpace: Invalid Lime header signature
+ WindowsHiberFileSpace32: No xpress signature found
+ WindowsCrashDumpSpace64BitMap: Header signature invalid
+ WindowsCrashDumpSpace64: Header signature invalid
+ HPAKAddressSpace: Invalid magic found
+ VMWareMetaAddressSpace: VMware metadata file is not available
+ VirtualBoxCoreDumpElf64: ELF Header signature invalid
+ VMWareAddressSpace: Invalid VMware signature: 0xf000ff53
+ QemuCoreDumpElf: ELF Header signature invalid
+ WindowsCrashDumpSpace32: Header signature invalid
+ Win10AMD64PagedMemory: Incompatible profile Win10x86 selected
+ WindowsAMD64PagedMemory: Incompatible profile Win10x86 selected
+ LinuxAMD64PagedMemory: Incompatible profile Win10x86 selected
+ AMD64PagedMemory: Incompatible profile Win10x86 selected
+ IA32PagedMemoryPae: No valid DTB found
+ IA32PagedMemory: No valid DTB found
+ OSXPmemELF: ELF Header signature invalid
+ FileAddressSpace: Must be first Address Space
+ ArmAddressSpace: No valid DTB found
+
+
+2020-05-03 17:20:01.825 VolatilityIngestModule process
+INFO: Path the volatility database file created ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput\Volatility\ram.db3
+2020-05-03 17:20:01.827 VolatilityIngestModule process
+INFO: Could not create table plugins_loaded_to_autopsy
+2020-05-03 17:20:01.827 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: Volatility Module analysis of LogicalFileSet1 (jobId=5) finished
+2020-05-03 17:20:01.827 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Finished first stage analysis (data source = LogicalFileSet1, objId = 1, jobId = 5)
+2020-05-03 17:20:01.828 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Finished analysis (data source = LogicalFileSet1, objId = 1, jobId = 5)
+2020-05-03 17:20:01.83 org.sleuthkit.autopsy.ingest.IngestManager finishIngestJob
+INFO: Ingest job 5 completed
+2020-05-03 17:20:24.797 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Drone Analyzer, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.15.0
+2020-05-03 17:20:24.798 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.15.0
+2020-05-03 17:20:25.184 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.15.0
+2020-05-03 17:20:25.185 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2020-05-03 17:20:25.185 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Module, version = 1.2
+2020-05-03 17:20:25.185 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Convert Hiber/Crash Module, version = 1.0
+2020-05-03 17:20:25.185 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Dump File Module, version = 1.2
+2020-05-03 17:20:38.475 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 6
+2020-05-03 17:20:38.476 VolatilityIngestModule startUp
+INFO: List Box Entry Starts here =====>
+2020-05-03 17:20:38.477 VolatilityIngestModule startUp
+INFO: [u'apihooks']
+2020-05-03 17:20:38.477 VolatilityIngestModule startUp
+INFO: apihooks
+2020-05-03 17:20:38.478 VolatilityIngestModule startUp
+INFO: <====== List Box Entry Ends here
+2020-05-03 17:20:38.478 VolatilityIngestModule startUp
+INFO: Volatility Executable ==> C:\Users\ben\Downloads\volatility_2.6_win64_standalone\volatility_2.6_win64_standalone.exe
+2020-05-03 17:20:38.478 VolatilityIngestModule startUp
+INFO: Volatility Profile to use ==> Win10x86
+2020-05-03 17:20:38.479 VolatilityIngestModule startUp
+INFO: Volatility Plugins to use ==> [u'apihooks']
+2020-05-03 17:20:38.48 VolatilityIngestModule startUp
+INFO: Additional Parms ==> 
+2020-05-03 17:20:38.482 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Starting first stage analysis (data source = LogicalFileSet1, objId = 1, jobId = 6)
+2020-05-03 17:20:38.482 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Scheduling first stage data source level analysis tasks (data source = LogicalFileSet1, objId = 1, jobId = 6)
+2020-05-03 17:20:38.483 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: Volatility Module analysis of LogicalFileSet1 (jobId=6) starting
+2020-05-03 17:20:38.484 VolatilityIngestModule process
+INFO: Starting to process, Just before call to parse_safari_history
+2020-05-03 17:20:38.485 VolatilityIngestModule process
+INFO: Plaso Import Directory already exists C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput
+2020-05-03 17:20:38.486 VolatilityIngestModule process
+INFO: Number of files to process ==> 2
+2020-05-03 17:20:38.486 VolatilityIngestModule process
+INFO: File name to process is ==> AbstractContent [	objId 0000000001	name LogicalFileSet1	parentId -1		checkedHasChildren false	hasChildren false	childrenCount -1uniquePath null]	AbstractFile [		fileType VIRTUAL_DIR	ctime 0	crtime 0	mtime 0	atime 0	attrId 0	attrType TSK_FS_ATTR_TYPE_DEFAULT	dirFlag Allocated	dirType DIR	uid 0	gid 0	metaAddr 0	metaSeq 0	metaFlags [Allocated, Used]	metaType d	modes []	parentPath /	size 0	knownState UNKNOWN	md5Hash null	localPathSet false	localPath null	localAbsPath null	localFile null]	VirtualDirectory [	]	
+2020-05-03 17:20:38.487 VolatilityIngestModule process
+INFO: File name to process is ==> None
+2020-05-03 17:20:38.488 VolatilityIngestModule process
+INFO: File name to process is ==> AbstractContent [	objId 0000000002	name ram.img	parentId -1		checkedHasChildren false	hasChildren false	childrenCount -1uniquePath null]	AbstractFile [		fileType LOCAL	ctime 0	crtime 0	mtime 0	atime 0	attrId 0	attrType TSK_FS_ATTR_TYPE_DEFAULT	dirFlag Allocated	dirType REG	uid 0	gid 0	metaAddr 0	metaSeq 0	metaFlags [Allocated, Used]	metaType r	modes []	parentPath /	size 1073741824	knownState UNKNOWN	md5Hash null	localPathSet true	localPath C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img	localAbsPath C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img	localFile null]	LocalFile [	]	
+2020-05-03 17:20:38.488 VolatilityIngestModule process
+INFO: File name to process is ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img
+2020-05-03 17:20:38.489 VolatilityIngestModule process
+INFO: File name to process is ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img
+2020-05-03 17:20:38.489 VolatilityIngestModule process
+INFO: File Name ==> ram.img
+2020-05-03 17:20:38.49 VolatilityIngestModule process
+INFO: File Name ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput\Volatility\ram.db3
+2020-05-03 17:20:38.491 VolatilityIngestModule process
+INFO: Running program ==> C:\Users\ben\Downloads\volatility_2.6_win64_standalone\volatility_2.6_win64_standalone.exe -f C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\ram.img --profile=Win10x86 --output=sqlite --output-file=C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput\Volatility\ram.db3  apihooks
+2020-05-03 17:20:46.602 VolatilityIngestModule process
+INFO: Output from run is ==> No suitable address space mapping found
+Tried to open image as:
+ MachOAddressSpace: mac: need base
+ LimeAddressSpace: lime: need base
+ WindowsHiberFileSpace32: No base Address Space
+ WindowsCrashDumpSpace64BitMap: No base Address Space
+ WindowsCrashDumpSpace64: No base Address Space
+ HPAKAddressSpace: No base Address Space
+ VMWareMetaAddressSpace: No base Address Space
+ VirtualBoxCoreDumpElf64: No base Address Space
+ VMWareAddressSpace: No base Address Space
+ QemuCoreDumpElf: No base Address Space
+ WindowsCrashDumpSpace32: No base Address Space
+ Win10AMD64PagedMemory: No base Address Space
+ WindowsAMD64PagedMemory: No base Address Space
+ LinuxAMD64PagedMemory: No base Address Space
+ AMD64PagedMemory: No base Address Space
+ IA32PagedMemoryPae: No base Address Space
+ IA32PagedMemory: No base Address Space
+ OSXPmemELF: No base Address Space
+ MachOAddressSpace: MachO Header signature invalid
+ LimeAddressSpace: Invalid Lime header signature
+ WindowsHiberFileSpace32: No xpress signature found
+ WindowsCrashDumpSpace64BitMap: Header signature invalid
+ WindowsCrashDumpSpace64: Header signature invalid
+ HPAKAddressSpace: Invalid magic found
+ VMWareMetaAddressSpace: VMware metadata file is not available
+ VirtualBoxCoreDumpElf64: ELF Header signature invalid
+ VMWareAddressSpace: Invalid VMware signature: 0xf000ff53
+ QemuCoreDumpElf: ELF Header signature invalid
+ WindowsCrashDumpSpace32: Header signature invalid
+ Win10AMD64PagedMemory: Incompatible profile Win10x86 selected
+ WindowsAMD64PagedMemory: Incompatible profile Win10x86 selected
+ LinuxAMD64PagedMemory: Incompatible profile Win10x86 selected
+ AMD64PagedMemory: Incompatible profile Win10x86 selected
+ IA32PagedMemoryPae: No valid DTB found
+ IA32PagedMemory: No valid DTB found
+ OSXPmemELF: ELF Header signature invalid
+ FileAddressSpace: Must be first Address Space
+ ArmAddressSpace: No valid DTB found
+
+
+2020-05-03 17:20:46.603 VolatilityIngestModule process
+INFO: Path the volatility database file created ==> C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle\ModuleOutput\Volatility\ram.db3
+2020-05-03 17:20:46.604 VolatilityIngestModule process
+INFO: Could not create table plugins_loaded_to_autopsy
+2020-05-03 17:20:46.604 org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline process
+INFO: Volatility Module analysis of LogicalFileSet1 (jobId=6) finished
+2020-05-03 17:20:46.604 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Finished first stage analysis (data source = LogicalFileSet1, objId = 1, jobId = 6)
+2020-05-03 17:20:46.605 org.sleuthkit.autopsy.ingest.DataSourceIngestJob logInfoMessage
+INFO: Finished analysis (data source = LogicalFileSet1, objId = 1, jobId = 6)
+2020-05-03 17:20:46.607 org.sleuthkit.autopsy.ingest.IngestManager finishIngestJob
+INFO: Ingest job 6 completed
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Drone Analyzer, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.15.0
+2020-05-03 17:23:39.921 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.15.0
+2020-05-03 17:23:40.342 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.15.0
+2020-05-03 17:23:40.342 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2020-05-03 17:23:40.342 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Module, version = 1.2
+2020-05-03 17:23:40.342 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Convert Hiber/Crash Module, version = 1.0
+2020-05-03 17:23:40.342 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Dump File Module, version = 1.2
+2020-05-03 17:24:09.07 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 7
+2020-05-03 17:24:09.071 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Dump File Module ingest module for job 7
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py", line 157, in startUp
+    Plugins = Plugins.replace("[", "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+	org.python.core.Py.AttributeError(Py.java:205)
+	org.python.core.PyObject.noAttributeError(PyObject.java:1013)
+	org.python.core.PyObject.__getattr__(PyObject.java:1008)
+	Volatility_Dump$py.startUp$14(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py:198)
+	Volatility_Dump$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility_Dump$VolatilityDumpIngestModule$146.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:24:09.072 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Ingest job 7 could not be started
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Correlation Engine, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Drone Analyzer, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Exif Parser, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.15.0
+2020-05-03 17:24:17.164 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.15.0
+2020-05-03 17:24:17.565 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.15.0
+2020-05-03 17:24:17.565 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2020-05-03 17:24:17.565 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Module, version = 1.2
+2020-05-03 17:24:17.565 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Convert Hiber/Crash Module, version = 1.0
+2020-05-03 17:24:17.565 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Volatility Dump File Module, version = 1.2
+2020-05-03 17:24:31.683 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 8
+2020-05-03 17:24:31.684 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Volatility Dump File Module ingest module for job 8
+Traceback (most recent call last):
+  File "C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py", line 157, in startUp
+    Plugins = Plugins.replace("[", "")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+	org.python.core.Py.AttributeError(Py.java:205)
+	org.python.core.PyObject.noAttributeError(PyObject.java:1013)
+	org.python.core.PyObject.__getattr__(PyObject.java:1008)
+	Volatility_Dump$py.startUp$14(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py:198)
+	Volatility_Dump$py.call_function(C:\Users\ben\AppData\Roaming\autopsy\python_modules\Volatility\Volatility_Dump.py)
+	org.python.core.PyTableCode.call(PyTableCode.java:167)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:307)
+	org.python.core.PyBaseCode.call(PyBaseCode.java:198)
+	org.python.core.PyFunction.__call__(PyFunction.java:482)
+	org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	org.python.core.PyMethod.__call__(PyMethod.java:228)
+	org.python.core.PyMethod.__call__(PyMethod.java:218)
+	org.python.core.PyMethod.__call__(PyMethod.java:213)
+	org.python.core.PyObject._jcallexc(PyObject.java:3626)
+	org.python.proxies.Volatility_Dump$VolatilityDumpIngestModule$160.startUp(Unknown Source)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline$PipelineModule.startUp(DataSourceIngestPipeline.java:194)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestPipeline.startUp(DataSourceIngestPipeline.java:83)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.startUpIngestPipelines(DataSourceIngestJob.java:450)
+	org.sleuthkit.autopsy.ingest.DataSourceIngestJob.start(DataSourceIngestJob.java:420)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:158)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:407)
+	org.sleuthkit.autopsy.ingest.IngestManager.access$600(IngestManager.java:111)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:895)
+	org.sleuthkit.autopsy.ingest.IngestManager$StartIngestJobTask.call(IngestManager.java:858)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	java.lang.Thread.run(Thread.java:748)
+2020-05-03 17:24:31.685 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Ingest job 8 could not be started
+2020-05-03 17:24:37.034 org.sleuthkit.autopsy.keywordsearch.Server stop
+INFO: Stopping Solr server from: C:\Program Files\Autopsy-4.15.0\autopsy\solr
+2020-05-03 17:24:37.034 org.sleuthkit.autopsy.keywordsearch.Server runSolrCommand
+INFO: Running Solr command: [C:\Program Files\Autopsy-4.15.0\jre\bin\java, -Xmx512m, -DSTOP.PORT=34343, -Djetty.port=23232, -DSTOP.KEY=jjk#09s, -jar, start.jar, --stop]
+2020-05-03 17:24:37.036 org.sleuthkit.autopsy.keywordsearch.Server runSolrCommand
+INFO: Finished running Solr command
+2020-05-03 17:24:37.036 org.sleuthkit.autopsy.keywordsearch.Server stop
+INFO: Waiting for Solr server to stop
+2020-05-03 17:24:38.307 org.sleuthkit.autopsy.keywordsearch.Server stop
+INFO: Finished stopping Solr server
+2020-05-03 17:24:38.307 org.sleuthkit.autopsy.core.Installer <init>
+INFO: core installer created
+2020-05-03 17:24:38.317 org.sleuthkit.autopsy.casemodule.Case closeCurrentCase
+INFO: Closing current case ACI CTF Needle (aci_ctf_needle_20200503_165551) in C:\Users\ben\Downloads\ACI CTF\Needle in the Haystack\Autopsy\ACI CTF Needle
+2020-05-03 17:24:40.319 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Shutting down image gallery controller for case ACI CTF Needle (aci_ctf_needle_20200503_165551)
+2020-05-03 17:24:40.321 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB close
+INFO: Closing the drawable.db
+2020-05-03 17:24:40.322 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Completed shut down of image gallery controller for case ACI CTF Needle (aci_ctf_needle_20200503_165551)

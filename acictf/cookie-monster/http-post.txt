@@ -1,0 +1,14 @@
+POST /approve HTTP/1.1
+Host: challenge.acictf.com:55495
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://challenge.acictf.com:55495/cookie/6a2e37ac-70d9-4dd4-9e60-887e149443b4
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 53
+Connection: close
+Cookie: session=5bf0f71f-b7ba-43ca-ad26-21cac95d9b70
+Upgrade-Insecure-Requests: 1
+
+cookie=6a2e37ac-70d9-4dd4-9e60-887e149443b4

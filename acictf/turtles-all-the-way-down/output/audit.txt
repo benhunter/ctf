@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Apr 26 19:09:14 2020
+Invocation: foremost challenge.pcap 
+Output directory: /home/kali/acictf/turtles-all-the-way-down/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: challenge.pcap
+Start: Sun Apr 26 19:09:14 2020
+Length: 14 KB (14444 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000017.zip 	       4 KB 	       8823 	 
+Finish: Sun Apr 26 19:09:14 2020
+
+1 FILES EXTRACTED
+	
+zip:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sun Apr 26 19:09:14 2020

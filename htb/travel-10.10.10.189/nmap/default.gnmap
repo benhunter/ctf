@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon May 25 20:05:15 2020 as: nmap -A -T5 -oA nmap/default travel.htb
+Host: 10.10.10.189 (travel.htb)	Status: Up
+Host: 10.10.10.189 (travel.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.17.6/, 443/open/tcp//ssl|http//nginx 1.17.6/	Ignored State: closed (997)
+# Nmap done at Mon May 25 20:05:39 2020 -- 1 IP address (1 host up) scanned in 23.32 seconds

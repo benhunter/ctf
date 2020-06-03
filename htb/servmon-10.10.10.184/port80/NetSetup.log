@@ -1,0 +1,62 @@
+﻿01/13/2020 15:10:35:140 -----------------------------------------------------------------
+01/13/2020 15:10:35:140 NetpDoDomainJoin
+01/13/2020 15:10:35:140 NetpDoDomainJoin: using new computer names
+01/13/2020 15:10:35:140 NetpDoDomainJoin: NetpGetNewMachineName returned 0x0
+01/13/2020 15:10:35:140 NetpMachineValidToJoin: 'WIN-1CMST7FGER9'
+01/13/2020 15:10:35:140 NetpMachineValidToJoin: status: 0x0
+01/13/2020 15:10:35:140 NetpJoinWorkgroup: joining computer 'WIN-1CMST7FGER9' to workgroup 'WORKGROUP'
+01/13/2020 15:10:35:140 NetpValidateName: checking to see if 'WORKGROUP' is valid as type 2 name
+01/13/2020 15:10:35:249 NetpCheckNetBiosNameNotInUse for 'WORKGROUP' [ Workgroup as MACHINE]  returned 0x0
+01/13/2020 15:10:35:249 NetpValidateName: name 'WORKGROUP' is valid for type 2
+01/13/2020 15:10:35:343 NetpJoinWorkgroup: status:  0x0
+01/13/2020 15:10:35:343 NetpDoDomainJoin: status: 0x0
+01/14/2020 18:04:36:884 -----------------------------------------------------------------
+01/14/2020 18:04:36:884 NetpValidateName: checking to see if 'DESKTOP-9HL7DJH' is valid as type 1 name
+01/14/2020 18:04:36:962 NetpCheckNetBiosNameNotInUse for 'DESKTOP-9HL7DJH' [MACHINE] returned 0x0
+01/14/2020 18:04:36:962 NetpValidateName: name 'DESKTOP-9HL7DJH' is valid for type 1
+01/14/2020 18:04:36:978 -----------------------------------------------------------------
+01/14/2020 18:04:36:978 NetpValidateName: checking to see if 'DESKTOP-9HL7DJH' is valid as type 5 name
+01/14/2020 18:04:36:978 NetpValidateName: name 'DESKTOP-9HL7DJH' is valid for type 5
+01/14/2020 18:04:36:978 -----------------------------------------------------------------
+01/14/2020 18:04:36:978 NetpValidateName: checking to see if 'CHANGEME' is valid as type 2 name
+01/14/2020 18:04:40:028 NetpCheckNetBiosNameNotInUse for 'CHANGEME' [ Workgroup as MACHINE]  returned 0x0
+01/14/2020 18:04:40:028 NetpValidateName: name 'CHANGEME' is valid for type 2
+01/14/2020 18:04:40:040 -----------------------------------------------------------------
+01/14/2020 18:04:40:040 NetpDoDomainJoin
+01/14/2020 18:04:40:072 NetpDoDomainJoin: using current computer names
+01/14/2020 18:04:40:072 NetpDoDomainJoin: NetpGetComputerNameEx(NetBios) returned 0x0
+01/14/2020 18:04:40:072 NetpMachineValidToJoin: 'DESKTOP-9HL7DJH'
+01/14/2020 18:04:40:072 NetpMachineValidToJoin: status: 0x0
+01/14/2020 18:04:40:072 NetpJoinWorkgroup: joining computer 'DESKTOP-9HL7DJH' to workgroup 'CHANGEME'
+01/14/2020 18:04:40:072 NetpValidateName: checking to see if 'CHANGEME' is valid as type 2 name
+01/14/2020 18:04:43:118 NetpCheckNetBiosNameNotInUse for 'CHANGEME' [ Workgroup as MACHINE]  returned 0x0
+01/14/2020 18:04:43:118 NetpValidateName: name 'CHANGEME' is valid for type 2
+01/14/2020 18:04:43:181 NetpJoinWorkgroup: status:  0x0
+01/14/2020 18:04:43:181 NetpDoDomainJoin: status: 0x0
+01/14/2020 18:49:00:601 -----------------------------------------------------------------
+01/14/2020 18:49:00:601 NetpValidateName: checking to see if 'SERVMON' is valid as type 1 name
+01/14/2020 18:49:03:648 NetpCheckNetBiosNameNotInUse for 'SERVMON' [MACHINE] returned 0x0
+01/14/2020 18:49:03:648 NetpValidateName: name 'SERVMON' is valid for type 1
+01/18/2020 09:53:58:018 -----------------------------------------------------------------
+01/18/2020 09:53:58:018 NetpValidateName: checking to see if 'SERVMON' is valid as type 1 name
+01/18/2020 09:53:58:049 NetpCheckNetBiosNameNotInUse for 'SERVMON' [MACHINE] returned 0x0
+01/18/2020 09:53:58:049 NetpValidateName: name 'SERVMON' is valid for type 1
+01/18/2020 09:53:58:049 -----------------------------------------------------------------
+01/18/2020 09:53:58:049 NetpValidateName: checking to see if 'ServMon' is valid as type 5 name
+01/18/2020 09:53:58:049 NetpValidateName: name 'ServMon' is valid for type 5
+01/18/2020 09:53:58:065 -----------------------------------------------------------------
+01/18/2020 09:53:58:065 NetpValidateName: checking to see if 'WORKGROUP' is valid as type 2 name
+01/18/2020 09:54:01:111 NetpCheckNetBiosNameNotInUse for 'WORKGROUP' [ Workgroup as MACHINE]  returned 0x0
+01/18/2020 09:54:01:111 NetpValidateName: name 'WORKGROUP' is valid for type 2
+01/18/2020 09:54:01:111 -----------------------------------------------------------------
+01/18/2020 09:54:01:111 NetpDoDomainJoin
+01/18/2020 09:54:01:111 NetpDoDomainJoin: using current computer names
+01/18/2020 09:54:01:111 NetpDoDomainJoin: NetpGetComputerNameEx(NetBios) returned 0x0
+01/18/2020 09:54:01:111 NetpMachineValidToJoin: 'SERVMON'
+01/18/2020 09:54:01:111 NetpMachineValidToJoin: status: 0x0
+01/18/2020 09:54:01:111 NetpJoinWorkgroup: joining computer 'SERVMON' to workgroup 'WORKGROUP'
+01/18/2020 09:54:01:111 NetpValidateName: checking to see if 'WORKGROUP' is valid as type 2 name
+01/18/2020 09:54:04:174 NetpCheckNetBiosNameNotInUse for 'WORKGROUP' [ Workgroup as MACHINE]  returned 0x0
+01/18/2020 09:54:04:174 NetpValidateName: name 'WORKGROUP' is valid for type 2
+01/18/2020 09:54:04:174 NetpJoinWorkgroup: status:  0x0
+01/18/2020 09:54:04:174 NetpDoDomainJoin: status: 0x0

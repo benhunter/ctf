@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun May 24 00:37:44 2020 as: nmap -A -T5 -p- -oA nmap/allports 10.10.10.174 -->
+<nmaprun scanner="nmap" args="nmap -A -T5 -p- -oA nmap/allports 10.10.10.174" start="1590295064" startstr="Sun May 24 00:37:44 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1590295064" endtime="1590295490"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.10.174" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="50464">
+<extrareasons reason="conn-refused" count="50464"/>
+</extraports>
+<extraports state="filtered" count="15068">
+<extrareasons reason="no-responses" count="15068"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="2.0.8 or later" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;-rw-r-&#45;r-&#45;    1 ftp      ftp      15426727 Oct 30  2019 fatty-client.jar&#xa;-rw-r-&#45;r-&#45;    1 ftp      ftp           526 Oct 30  2019 note.txt&#xa;-rw-r-&#45;r-&#45;    1 ftp      ftp           426 Oct 30  2019 note2.txt&#xa;-rw-r-&#45;r-&#45;    1 ftp      ftp           194 Oct 30  2019 note3.txt"/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 10.10.14.4&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 3&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 10.10.14.4&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 3&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4p1 Debian 10+deb9u7" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 fd:c5:61:ba:bd:a3:e2:26:58:20:45:69:a7:58:35:08 (RSA)&#xa;  256 4a:a8:aa:c6:5f:10:f0:71:8a:59:c5:3e:5f:b9:32:f7 (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">fdc561babda3e22658204569a7583508</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCch5Y0shVqshI3WvrT6ssCOgS1ryb2OYj/HQHt/dt2KZr5dFogYlMssO/aLQuDasM8GfgVlhqwZahQnXC/+7ANN5MkQgKRjNwdM4Azkyck4yeaHpbVkbOWNRXsD504M9EVqS1U0uhnH5YtUwIQe5L1thML+qbsVeow7TZGo6qDlJ2NLj1l5deT1AYR8GN2APgaB2qgNaNus8ScK57TFSXQIxn+HsEFwwdP0bC6rlnGUO1d0waZUBVABD3w38tppqpcZeQlpPhTTesq5/WW0zfmagtC/gY6DofuMymR4TqX5Ct66xJ6OYj2Ct81YiWzJ2Rl1wv0XHU1Qk1cYZZQFzef</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">4aa8aac65f10f0718a59c53e5fb932f7</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAICLVDa+PdfkybibPDgW3mOkKxkynj9FBwBf4LegOmJiy</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="1337"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="waste" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="2020-05-24T04:45:49+00:00; +1m59s from scanner time."><elem key="date">2020-05-24T04:45:49+00:00</elem>
+<elem key="delta">119.0</elem>
+</script></port>
+</ports>
+<hostscript><script id="clock-skew" output="1m58s"><elem key="stddev">0</elem>
+<elem key="count">1</elem>
+<elem key="median">118</elem>
+<elem key="mean">118</elem>
+</script></hostscript><times srtt="67848" rttvar="21" to="67932"/>
+</host>
+<runstats><finished time="1590295490" timestr="Sun May 24 00:44:50 2020" elapsed="426.13" summary="Nmap done at Sun May 24 00:44:50 2020; 1 IP address (1 host up) scanned in 426.13 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,30 @@
+kali@kali:~/acictf$ nc challenge.acictf.com 47912
+
+  This program is going to ask you to convert among 6 different bases a total
+  of 500 times.  Each question is placed inside of lines delimited by 78
+  '-' characters.  The first line of each question indicates the base we are
+  giving to you as well as the base we expect the result in and looks like:
+          [src_base] -> [answer base]
+  The next line of the question is the source text that we want you to convert
+  into the new base. Your answer should be followed by a newline character.
+
+  All of the encodings treat an underlying printable ASCII string as a
+  big-endian number.  If that doesn't make a lot of sense, don't worry about
+  it: most of the tools you'd look to use (Python, websites, etc.) generally
+  assume this anyways.  Except for 'raw' and 'b64', there will never be
+  leading 0s at the start of the answer.
+
+  Formatting key:
+          raw = the unencoded ASCII string (contains only printable characters
+                    that are not whitespace)
+          b64 = standard base64 encoding (see 'base64' unix command)
+          hex = hex (base 16) encoding (case insensitive)
+          dec = decimal (base 10) encoding
+          oct = octal (base 8) encoding
+          bin = binary (base 2) encoding (should consist of ASCII '0' and '1')
+    
+------------------------------------------------------------------------------
+raw -> dec
+&_`ZJ.XMTVHzSCnMF<'|ejMc:P8j<tiGU9fHzY;zr4c16z>[yu}ON>7G){:c9xUk
+------------------------------------------------------------------------------
+answer: 

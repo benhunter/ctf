@@ -1,0 +1,109 @@
+    1  ls -lah
+    2  ./autorun.sh 
+    3  exit
+    4  mkdir acictf
+    5  cd acictf/
+    6  ls
+    7  ls -lah
+    8  sudo apt list --installed
+    9  sudo apt list --installed | grep raid
+   10  sudo apt install mdadm
+   11  sudo apt list --installed | grep raid
+   12  sudo apt list --installed | grep mdadm
+   13  shutdown now
+   14  mdadm
+   15  mdadm --examine --scan
+   16  cat /prov/mdstat
+   17  sudo cat /prov/mdstat
+   18  cd acictf/
+   19  ls
+   20  mkdir recovery-and-identification
+   21  mv disk* recovery-and-identification/
+   22  ls
+   23  cd recovery-and-identification/
+   24  losetup
+   25  losetup -f
+   26  sudo losetup loop7 disk1.img.xz 
+   27  sudo losetup -d loop7 
+   28  losetup -f
+   29  losetup
+   30  sudo losetup -d loop7
+   31  sudo losetup -d /dev/loop7
+   32  losetup
+   33  losetup -f
+   34  ls -lah
+   35  unxz
+   36  unxz disk1.img.xz 
+   37  unxz disk2.img.xz
+   38  ls
+   39  sudo losetup loop7 disk1.img 
+   40  sudo losetup loop8 disk2.img 
+   41  losetup
+   42  sudo mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/loop7 /dev/loop8 missing
+   43  cat /proc/mdstat
+   44  sudo mdadm --examine --scan --verbose
+   45  sudo mdadm /dev/md127
+   46  sudo mdadm --examine /dev/md127
+   47  sudo mdadm --detail /dev/md127
+   48  sudo mdadm --stop /dev/md127
+   49  sudo mdadm --detail /dev/md127
+   50  sudo mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/loop7 /dev/loop8 missing
+   51  ls /dev/md0
+   52  ls -lah /dev/md0
+   53  mount /dev/md0
+   54  mount /dev/md0 /acictfraid
+   55  sudo mount /dev/md0 /acictfraid
+   56  ls
+   57  mkdir raidmount
+   58  sudo mount /dev/md0 raidmount/
+   59  ls
+   60  tree
+   61  sudo unmount /dev/md0
+   62  sudo mount
+   63  sudo umount /dev/md0
+   64  sudo mdadm --assemble /dev/md0 /dev/loop7 /dev/loop8
+   65  cat /proc/mdstat
+   66  sudo mdadm --stop /dev/md0
+   67  sudo mdadm --assemble /dev/md0 /dev/loop7 /dev/loop8
+   68  sudo mount /dev/md0 raidmount/
+   69  tree
+   70  sudo mdadm --assemble /dev/md1 /dev/loop7 /dev/loop8
+   71  sudo mdadm --stop /dev/md0
+   72  sudo umount /dev/md0
+   73  sudo mdadm --stop /dev/md0
+   74  sudo mdadm --assemble /dev/md1 /dev/loop7 /dev/loop8
+   75  sudo mount /dev/md1 raidmount/
+   76  cat /proc/mdstat
+   77  cd raidmount/images/
+   78  binwalk 0.tar.gz.bz2 
+   79  sudo apt install binwalk
+   80  binwalk 0.tar.gz.bz2 
+   81  binwalk -M 0.tar.gz.bz2 
+   82  cd ../...
+   83  cd ../..
+   84  ls
+   85  dd if=./raidmount/ of=./array.img
+   86  dd if=./dev/md0 of=./array.img
+   87  dd if=/dev/md0 of=./array.img
+   88  suso dd if=/dev/md0 of=./array.img
+   89  sudo dd if=/dev/md0 of=./array.img
+   90  mdamd --scan
+   91  mdadm --examine --scan
+   92  sudo mdadm --examine --scan
+   93  sudo cat /proc/mdstat
+   94  sudo dd if=/dev/md1 of=./array.img
+   95  ls -lah
+   96  binwalk array.img 
+   97  binwalk -eM array.img 
+   98  ls
+   99  cd _array.img.extracted/
+  100  tree
+  101  strings 0.ext 
+  102  strings 0.ext | grep ACI
+  103  tree
+  104  find .
+  105  find . | xargs
+  106  find . | xargs grep ACI
+  107  strings ./_9003400.extracted/6.tar
+  108  cd ..
+  109  history > history2020-05-10.txt

@@ -1,0 +1,24 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Apr 26 18:55:06 2020
+Invocation: foremost jammed.jpg 
+Output directory: /home/kali/acictf/thats-more-than-enough/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: jammed.jpg
+Start: Sun Apr 26 18:55:06 2020
+Length: 23 KB (24446 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	       9 KB 	          0 	 
+1:	00000019.jpg 	      14 KB 	      10108 	 
+Finish: Sun Apr 26 18:55:06 2020
+
+2 FILES EXTRACTED
+	
+jpg:= 2
+------------------------------------------------------------------
+
+Foremost finished at Sun Apr 26 18:55:06 2020

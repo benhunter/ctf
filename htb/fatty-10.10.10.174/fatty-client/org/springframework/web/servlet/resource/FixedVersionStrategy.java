@@ -1,0 +1,59 @@
+/*    */ package org.springframework.web.servlet.resource;
+/*    */ 
+/*    */ import org.springframework.core.io.Resource;
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ public class FixedVersionStrategy
+/*    */   extends AbstractVersionStrategy
+/*    */ {
+/*    */   private final String version;
+/*    */   
+/*    */   public FixedVersionStrategy(String version) {
+/* 44 */     super(new AbstractVersionStrategy.PrefixVersionPathStrategy(version));
+/* 45 */     this.version = version;
+/*    */   }
+/*    */ 
+/*    */ 
+/*    */   
+/*    */   public String getResourceVersion(Resource resource) {
+/* 51 */     return this.version;
+/*    */   }
+/*    */ }
+
+
+/* Location:              /home/kali/ctf/htb/fatty-10.10.10.174/ftp/fatty-client.jar!/org/springframework/web/servlet/resource/FixedVersionStrategy.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

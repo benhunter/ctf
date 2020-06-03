@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri May 15 01:26:28 2020 as: nmap -A -T4 -p- -oA nmap/allports 10.10.10.184 -->
+<nmaprun scanner="nmap" args="nmap -A -T4 -p- -oA nmap/allports 10.10.10.184" start="1589520388" startstr="Fri May 15 01:26:28 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1589520389" endtime="1589520661"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.184" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65517">
+<extrareasons reason="conn-refused" count="65517"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="Microsoft ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:ftp_service</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;01-18-20  12:05PM       &lt;DIR&gt;          Users"/><script id="ftp-syst" output="&#xa;  SYST: Windows_NT"><elem key="SYST">Windows_NT</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="for_Windows_7.7" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:for_windows_7.7</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 b9:89:04:ae:b6:26:07:3f:61:89:75:cf:10:29:28:83 (RSA)&#xa;  256 71:4e:6c:c0:d3:6e:57:4f:06:b8:95:3d:c7:75:57:53 (ECDSA)&#xa;  256 15:38:bd:75:06:71:67:7a:01:17:9c:5c:ed:4c:de:0e (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDnC92+BCplDo38VDQIZzb7V3HN/OucvxF0VMDDoYShdUrpDUW6JcSR/Zr6cADbHy7eDLw2O+WW+M4SzH7kfpbTv3HvJ0z8iOsRs2nUrUint4CR/A2vYA9SFOk18FU0QUS0sByBIlemU0uiPxN+iRCcpFhZDj+eiVRF7o/XxNbExnhU/2n9MXwFS8XTYNeGqSLE1vV6KdpMfpJj/yey8gvEpDQTX5OQK+kkUHze3LXLyu/XVTKzfqUBMAP+IQ5F6ICWgaC1a+cx/D7C/aobCbqaXY+75t1mxbEMmm1Wv/42nVQxcT7tN2C3sds4VJkYgZKcBhsE0XdJcR9mTb1wWsg9</elem>
+<elem key="fingerprint">b98904aeb626073f618975cf10292883</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMToH2eB7rzpMZuvElpHYko/TXSsOfG8EXWQxmC/T4PCaAmVRDgJWEFMHgpRilSAKoOBlS2RHWNpMJldTFbWSVo=</elem>
+<elem key="fingerprint">714e6cc0d36e574f06b8953dc7755753</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILbqSRVLRJFVNhD0W0C5xB7b3RoJZZKdM+jSGryFWOQa</elem>
+<elem key="fingerprint">1538bd750671677a01179c5ced4cde0e</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=5/15%Time=5EBE285A%P=x86_64-pc-linux-gnu%r(NULL,6B,&quot;HTTP/1\.1\x20408\x20Request\x20Timeout\r\nContent-type:\x20text/html\r\nContent-Length:\x200\r\nConnection:\x20close\r\nAuthInfo:\x20\r\n\r\n&quot;)%r(GetRequest,1B4,&quot;HTTP/1\.1\x20200\x20OK\r\nContent-type:\x20text/html\r\nContent-Length:\x20340\r\nConnection:\x20close\r\nAuthInfo:\x20\r\n\r\n\xef\xbb\xbf&lt;!DOCTYPE\x20html\x20PUBLIC\x20\&quot;-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\&quot;\x20\&quot;http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\&quot;&gt;\r\n\r\n&lt;html\x20xmlns=\&quot;http://www\.w3\.org/1999/xhtml\&quot;&gt;\r\n&lt;head&gt;\r\n\x20\x20\x20\x20&lt;title&gt;&lt;/title&gt;\r\n\x20\x20\x20\x20&lt;script\x20type=\&quot;text/javascript\&quot;&gt;\r\n\x20\x20\x20\x20\x20\x20\x20\x20window\.location\.href\x20=\x20\&quot;Pages/login\.htm\&quot;;\r\n\x20\x20\x20\x20&lt;/script&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,1B4,&quot;HTTP/1\.1\x20200\x20OK\r\nContent-type:\x20text/html\r\nContent-Length:\x20340\r\nConnection:\x20close\r\nAuthInfo:\x20\r\n\r\n\xef\xbb\xbf&lt;!DOCTYPE\x20html\x20PUBLIC\x20\&quot;-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\&quot;\x20\&quot;http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\&quot;&gt;\r\n\r\n&lt;html\x20xmlns=\&quot;http://www\.w3\.org/1999/xhtml\&quot;&gt;\r\n&lt;head&gt;\r\n\x20\x20\x20\x20&lt;title&gt;&lt;/title&gt;\r\n\x20\x20\x20\x20&lt;script\x20type=\&quot;text/javascript\&quot;&gt;\r\n\x20\x20\x20\x20\x20\x20\x20\x20window\.location\.href\x20=\x20\&quot;Pages/login\.htm\&quot;;\r\n\x20\x20\x20\x20&lt;/script&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,1B4,&quot;HTTP/1\.1\x20200\x20OK\r\nContent-type:\x20text/html\r\nContent-Length:\x20340\r\nConnection:\x20close\r\nAuthInfo:\x20\r\n\r\n\xef\xbb\xbf&lt;!DOCTYPE\x20html\x20PUBLIC\x20\&quot;-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\&quot;\x20\&quot;http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\&quot;&gt;\r\n\r\n&lt;html\x20xmlns=\&quot;http://www\.w3\.org/1999/xhtml\&quot;&gt;\r\n&lt;head&gt;\r\n\x20\x20\x20\x20&lt;title&gt;&lt;/title&gt;\r\n\x20\x20\x20\x20&lt;script\x20type=\&quot;text/javascript\&quot;&gt;\r\n\x20\x20\x20\x20\x20\x20\x20\x20window\.location\.href\x20=\x20\&quot;Pages/login\.htm\&quot;;\r\n\x20\x20\x20\x20&lt;/script&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions, RTSPRequest: &#xa;    HTTP/1.1 200 OK&#xa;    Content-type: text/html&#xa;    Content-Length: 340&#xa;    Connection: close&#xa;    AuthInfo: &#xa;    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;&#xa;    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;&lt;/title&gt;&#xa;    &lt;script type=&quot;text/javascript&quot;&gt;&#xa;    window.location.href = &quot;Pages/login.htm&quot;;&#xa;    &lt;/script&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  NULL: &#xa;    HTTP/1.1 408 Request Timeout&#xa;    Content-type: text/html&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    AuthInfo:"><elem key="GetRequest, HTTPOptions, RTSPRequest">&#xa;    HTTP/1.1 200 OK&#xa;    Content-type: text/html&#xa;    Content-Length: 340&#xa;    Connection: close&#xa;    AuthInfo: &#xa;    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;&#xa;    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;&lt;/title&gt;&#xa;    &lt;script type=&quot;text/javascript&quot;&gt;&#xa;    window.location.href = &quot;Pages/login.htm&quot;;&#xa;    &lt;/script&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="NULL">&#xa;    HTTP/1.1 408 Request Timeout&#xa;    Content-type: text/html&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    AuthInfo:</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."><elem key="title"></elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="6063"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="x11" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6699"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="napster" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https-alt" servicefp="SF-Port8443-TCP:V=7.80%T=SSL%I=7%D=5/15%Time=5EBE2862%P=x86_64-pc-linux-gnu%r(GetRequest,74,&quot;HTTP/1\.1\x20302\r\nContent-Length:\x200\r\nLocation:\x20/index\.html\r\n\r\n\0\0\0\0\0\0\0\0\0\0iday\0\0\0\0:Saturday\0\0\x12\x02\x18\0\x1aE\n\x07workers\x12\x0b\n\x04jobs\x12\x03\x18\xc3\x01\x12&quot;)%r(HTTPOptions,36,&quot;HTTP/1\.1\x20404\r\nContent-Length:\x2018\r\n\r\nDocument\x20not\x20found&quot;)%r(FourOhFourRequest,36,&quot;HTTP/1\.1\x20404\r\nContent-Length:\x2018\r\n\r\nDocument\x20not\x20found&quot;)%r(RTSPRequest,36,&quot;HTTP/1\.1\x20404\r\nContent-Length:\x2018\r\n\r\nDocument\x20not\x20found&quot;)%r(SIPOptions,36,&quot;HTTP/1\.1\x20404\r\nContent-Length:\x2018\r\n\r\nDocument\x20not\x20found&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, HTTPOptions, RTSPRequest, SIPOptions: &#xa;    HTTP/1.1 404&#xa;    Content-Length: 18&#xa;    Document not found&#xa;  GetRequest: &#xa;    HTTP/1.1 302&#xa;    Content-Length: 0&#xa;    Location: /index.html&#xa;    iday&#xa;    :Saturday&#xa;    workers&#xa;    jobs"><elem key="FourOhFourRequest, HTTPOptions, RTSPRequest, SIPOptions">&#xa;    HTTP/1.1 404&#xa;    Content-Length: 18&#xa;    Document not found</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 302&#xa;    Content-Length: 0&#xa;    Location: /index.html&#xa;    iday&#xa;    :Saturday&#xa;    workers&#xa;    jobs</elem>
+</script><script id="ssl-cert" output="Subject: commonName=localhost&#xa;Not valid before: 2020-01-14T13:24:20&#xa;Not valid after:  2021-01-13T13:24:20"><table key="subject">
+<elem key="commonName">localhost</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">localhost</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">userdata: 0x5640a899b718</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">userdata: 0x5640a8f82198</elem>
+<elem key="type">rsa</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-01-14T13:24:20</elem>
+<elem key="notAfter">2021-01-13T13:24:20</elem>
+</table>
+<elem key="md5">1d030c405b7a0f6dd8c878e3cba738b4</elem>
+<elem key="sha1">7083bd82b4b0f9c0cc9c50192f9f929146948334</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICoTCCAYmgAwIBAgIBADANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDDAlsb2Nh&#xa;bGhvc3QwHhcNMjAwMTE0MTMyNDIwWhcNMjEwMTEzMTMyNDIwWjAUMRIwEAYDVQQD&#xa;DAlsb2NhbGhvc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDXCoMi&#xa;kUUWbCi0E1C/LfZFrm4UKCheesOFUAITOnrCvfkYmUR0o7v9wQ8yR5sQR8OIxfJN&#xa;vOTE3C/YZjPE/XLFrLhBpb64X83rqzFRwX7bHVr+PZmHQR0qFRvrsWoQTKcjrElo&#xa;R4WgF4AWkR8vQqsCADPuDGIsNb6PyXSru8/A/HJSt5ef8a3dcOCszlm2bP62qsa8&#xa;XqumPHAKKwiu8k8N94qyXyVwOxbh1nPcATwede5z/KkpKBtpNfSFjrL+sLceQC5S&#xa;wU8u06kPwgzrqTM4L8hyLbsgGcByOBeWLjPJOuR0L/a33yTL3lLFDx/RwGIln5s7&#xa;BwX8AJUEl+6lRs1JAgMBAAEwDQYJKoZIhvcNAQEFBQADggEBAAjXGVBKBNUUVJ51&#xa;b2f08SxINbWy4iDxomygRhT/auRNIypAT2muZ2//KBtUiUxaHZguCwUUzB/1jiED&#xa;s/IDA6dWvImHWnOZGgIUsLo/242RsNgKUYYz8sxGeDKceh6F9RvyG3Sr0OyUrPHt&#xa;sc2hPkgZ0jgf4igc6/3KLCffK5o85bLOQ4hCmJqI74aNenTMNnojk42NfBln2cvU&#xa;vK13uXz0wU1PDgfyGrq8DL8A89zsmdW6QzBElnNKpqNdSj+5trHe7nYYM5m0rrAb&#xa;H2nO4PdFbPGJpwRlH0BOm0kIY0az67VfOakdo1HiWXq5ZbhkRm27B2zO7/ZKfVIz&#xa;XXrt6LA=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="clock-skew" output="3m23s"><elem key="mean">203</elem>
+<elem key="stddev">0</elem>
+<elem key="count">1</elem>
+<elem key="median">203</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-05-15T05:33:54&#xa;  start_date: N/A"><elem key="date">2020-05-15T05:33:54</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="70507" rttvar="834" to="100000"/>
+</host>
+<runstats><finished time="1589520661" timestr="Fri May 15 01:31:01 2020" elapsed="273.14" summary="Nmap done at Fri May 15 01:31:01 2020; 1 IP address (1 host up) scanned in 273.14 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

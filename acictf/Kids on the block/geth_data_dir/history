@@ -1,0 +1,130 @@
+
+dir()
+eth
+dir(eth)
+ls(eth)
+eth
+eth.getTransaction(0xb4ba4b90df51d42a7c6093e92e1c7d22874c14f2)
+eth.getTransaction("0xb4ba4b90df51d42a7c6093e92e1c7d22874c14f2")
+web3
+web3.eth.blockNumber
+eth.getTransaction(0xb4ba4b90df51d42a7c6093e92e1c7d22874c14f2)
+eth.getTransaction(b4ba4b90df51d42a7c6093e92e1c7d22874c14f2)
+"eth.getTransaction(b4ba4b90df51d42a7c6093e92e1c7d22874c14f2")
+eth.getTransaction("b4ba4b90df51d42a7c6093e92e1c7d22874c14f2")
+eth.getTransaction("0xb4ba4b90df51d42a7c6093e92e1c7d22874c14f2")
+web3.eth
+web3.eth.getTransaction('0xb4ba4b90df51d42a7c6093e92e1c7d22874c14f2')
+eth
+eth.getBalance('0xb4ba4b90df51d42a7c6093e92e1c7d22874c14f2');
+eth.getBalance('0xb4ba4b90df51d42a7c6093e92e1c7d22874c14f2')
+eth
+eth.getTransaction("0x8fbf818cf1ebf1c319aa970c2a2f7e9718169a724b79504d4f0051a48118c42f")
+eth.getTransaction("0x8fbf818cf1ebf1c319aa970c2a2f7e9718169a724b79504d4f0051a48118c42f").to
+eth.getAccounts()
+eth.getAccounts(eth.getTransaction("0x8fbf818cf1ebf1c319aa970c2a2f7e9718169a724b79504d4f0051a48118c42f").to)
+eth.getTransaction("0x8fbf818cf1ebf1c319aa970c2a2f7e9718169a724b79504d4f0051a48118c42f").to
+eth
+eth.getTransaction("0x7c75c823b8f7d05866d934a9f0c6f50132f8c8406dd906ad0ef32f4bf79e7427")
+eth.getTransaction("")
+eth.getTransaction("0x167f7969ae2ecf157306f798f63929903a02d771")
+eth.getTransaction("0x09c0dd28b28cf223ac4ad093808dc4ffc0461f7a512b4a0c5a566d98205084b5")
+eth.getBalance("0x167f7969ae2ecf157306f798f63929903a02d771")
+0x836dfec2f9e6ea6b7a98ce3e2775f8125b56389461602b5fbc087a8dd300eee0
+eth.getBalance("")
+eth.getBalance("0x836dfec2f9e6ea6b7a98ce3e2775f8125b56389461602b5fbc087a8dd300eee0")
+eth.getTransaction("")
+eth.getTransaction("0x836dfec2f9e6ea6b7a98ce3e2775f8125b56389461602b5fbc087a8dd300eee0")
+eth.getTransaction("0x4f05a8f1f86c982f254d7f483fb2bd8593f81c6e275375e17744380c98822e73")
+eth.getTransaction("0x09c0dd28b28cf223ac4ad093808dc4ffc0461f7a512b4a0c5a566d98205084b5")
+eth.getBalance("0x167f7969ae2ecf157306f798f63929903a02d771")
+eth.getTransaction("0x09c0dd28b28cf223ac4ad093808dc4ffc0461f7a512b4a0c5a566d98205084b5")
+eth.getTransaction("0x09c0dd28b28cf223ac4ad093808dc4ffc0461f7a512b4a0c5a566d98205084b5").input
+function getTransactionsByAccount(myaccount, startBlockNumber, endBlockNumber) {
+  if (endBlockNumber == null) {
+    endBlockNumber = eth.blockNumber;
+    console.log("Using endBlockNumber: " + endBlockNumber);
+  }
+  if (startBlockNumber == null) {
+    startBlockNumber = endBlockNumber - 1000;
+    console.log("Using startBlockNumber: " + startBlockNumber);
+  }
+  console.log("Searching for transactions to/from account \"" + myaccount + "\" within blocks "  + startBlockNumber + " and " + endBlockNumber);
+  for (var i = startBlockNumber; i <= endBlockNumber; i++) {
+    if (i % 1000 == 0) {
+      console.log("Searching block " + i);
+    }
+    var block = eth.getBlock(i, true);
+    if (block != null && block.transactions != null) {
+      block.transactions.forEach( function(e) {
+        if (myaccount == "*" || myaccount == e.from || myaccount == e.to) {
+          console.log("  tx hash          : " + e.hash + "\n"
+            + "   nonce           : " + e.nonce + "\n"
+            + "   blockHash       : " + e.blockHash + "\n"
+            + "   blockNumber     : " + e.blockNumber + "\n"
+            + "   transactionIndex: " + e.transactionIndex + "\n"
+            + "   from            : " + e.from + "\n" 
+            + "   to              : " + e.to + "\n"
+            + "   value           : " + e.value + "\n"
+            + "   time            : " + block.timestamp + " " + new Date(block.timestamp * 1000).toGMTString() + "\n"
+            + "   gasPrice        : " + e.gasPrice + "\n"
+            + "   gas             : " + e.gas + "\n"
+            + "   input           : " + e.input);
+        }
+      })
+    }
+  }
+}
+getTransactionsByAccount()
+getTransactionsByAccount("0x167f7969ae2ecf157306f798f63929903a02d771", 0, 63)
+function getTransactionsByAccount(myaccount, startBlockNumber, endBlockNumber) {
+  if (endBlockNumber == null) {
+    endBlockNumber = eth.blockNumber;
+    console.log("Using endBlockNumber: " + endBlockNumber);
+  }
+  if (startBlockNumber == null) {
+    startBlockNumber = endBlockNumber - 1000;
+    console.log("Using startBlockNumber: " + startBlockNumber);
+  }
+  console.log("Searching for transactions to/from account \"" + myaccount + "\" within blocks "  + startBlockNumber + " and " + endBlockNumber);
+  for (var i = startBlockNumber; i <= endBlockNumber; i++) {
+    if (i % 1000 == 0) {
+      console.log("Searching block " + i);
+    }
+    var block = eth.getBlock(i, true);
+    if (block != null && block.transactions != null) {
+      block.transactions.forEach( function(e) {
+        if (myaccount == "*" || myaccount == e.from || myaccount == e.to) {
+          console.log("  tx hash          : " + e.hash + "\n"
+            + "   nonce           : " + e.nonce + "\n"
+            + "   blockHash       : " + e.blockHash + "\n"
+            + "   blockNumber     : " + e.blockNumber + "\n"
+            + "   transactionIndex: " + e.transactionIndex + "\n"
+            + "   from            : " + e.from + "\n" 
+            + "   to              : " + e.to + "\n"
+            + "   value           : " + e.value + "\n"
+            + "   time            : " + block.timestamp + " \n" // + new Date(block.timestamp * 1000).toGMTString() + "\n"
+            + "   gasPrice        : " + e.gasPrice + "\n"
+            + "   gas             : " + e.gas + "\n"
+            + "   input           : " + e.input);
+        }
+      })
+    }
+  }
+}
+getTransactionsByAccount("0x167f7969ae2ecf157306f798f63929903a02d771", 0, 63)
+eth.getTransaction("0xf678663343298496dcb73f77c0500ec1f19ec94554a73b5495c651e3dc1e2629")
+eth.getTransaction("0xf678663343298496dcb73f77c0500ec1f19ec94554a73b5495c651e3dc1e2629").input
+toAscii
+web3.toAscii
+web3.toAscii(0xf3fef3a300000000000000000000000050fc67693f00fbabc5473c3705ef057b09acf2c700000000000000000000000000000000000000000000000022b1c8c1227a0000)
+web3.toAscii("0xf3fef3a300000000000000000000000050fc67693f00fbabc5473c3705ef057b09acf2c700000000000000000000000000000000000000000000000022b1c8c1227a0000")
+web3.hexToAscii("0xf3fef3a300000000000000000000000050fc67693f00fbabc5473c3705ef057b09acf2c700000000000000000000000000000000000000000000000022b1c8c1227a0000")
+web3.hexToString("0xf3fef3a300000000000000000000000050fc67693f00fbabc5473c3705ef057b09acf2c700000000000000000000000000000000000000000000000022b1c8c1227a0000")
+web3
+web3.toUtf8("0xf3fef3a300000000000000000000000050fc67693f00fbabc5473c3705ef057b09acf2c700000000000000000000000000000000000000000000000022b1c8c1227a0000")
+web3.toAscii("0xf3fef3a300000000000000000000000050fc67693f00fbabc5473c3705ef057b09acf2c700000000000000000000000000000000000000000000000022b1c8c1227a0000")
+eth.getTransaction("0xf678663343298496dcb73f77c0500ec1f19ec94554a73b5495c651e3dc1e2629").input
+eth.getTransaction("0xf678663343298496dcb73f77c0500ec1f19ec94554a73b5495c651e3dc1e2629")
+eth.getTransaction("0xbaecc4fa4b66424b2c4c47fca9eb5726fca154fefcfa254e2d835049a24f6d44")
+eth.syncing

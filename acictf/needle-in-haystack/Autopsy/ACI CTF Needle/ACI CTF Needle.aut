@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutopsyCase>
+  <SchemaVersion>5.0</SchemaVersion>
+  <CreatedDate>2020/05/03 16:55:51 (PDT)</CreatedDate>
+  <ModifiedDate>2020/05/03 16:55:52 (PDT)</ModifiedDate>
+  <CreatedByAutopsyVersion>4.15.0</CreatedByAutopsyVersion>
+  <SavedByAutopsyVersion>4.15.0</SavedByAutopsyVersion>
+  <Case>
+    <Name>aci_ctf_needle_20200503_165551</Name>
+    <DisplayName>ACI CTF Needle</DisplayName>
+    <Number/>
+    <Examiner/>
+    <ExaminerPhone/>
+    <ExaminerEmail/>
+    <CaseNotes/>
+    <CaseType>Single-user case</CaseType>
+    <Database/>
+    <CaseDatabase>autopsy.db</CaseDatabase>
+    <TextIndex/>
+  </Case>
+  <OriginalCase/>
+</AutopsyCase>

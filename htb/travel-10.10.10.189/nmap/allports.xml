@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon May 25 20:50:13 2020 as: nmap -A -T5 -p- -oA nmap/allports travel.htb -->
+<nmaprun scanner="nmap" args="nmap -A -T5 -p- -oA nmap/allports travel.htb" start="1590465013" startstr="Mon May 25 20:50:13 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1590465013" endtime="1590465395"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.189" addrtype="ipv4"/>
+<hostnames>
+<hostname name="travel.htb" type="user"/>
+<hostname name="travel.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="55576">
+<extrareasons reason="conn-refused" count="55576"/>
+</extraports>
+<extraports state="filtered" count="9956">
+<extrareasons reason="no-responses" count="9956"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.17.6" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.17.6</cpe></service><script id="http-server-header" output="nginx/1.17.6"><elem>nginx/1.17.6</elem>
+</script><script id="http-title" output="Travel.HTB"><elem key="title">Travel.HTB</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.17.6" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.17.6</cpe></service><script id="http-server-header" output="nginx/1.17.6"><elem>nginx/1.17.6</elem>
+</script><script id="http-title" output="Travel.HTB - SSL coming soon."><elem key="title">Travel.HTB - SSL coming soon.</elem>
+</script><script id="ssl-cert" output="Subject: commonName=www.travel.htb/organizationName=Travel.HTB/countryName=UK&#xa;Subject Alternative Name: DNS:www.travel.htb, DNS:blog.travel.htb, DNS:blog-dev.travel.htb&#xa;Not valid before: 2020-04-23T19:24:29&#xa;Not valid after:  2030-04-21T19:24:29"><table key="subject">
+<elem key="commonName">www.travel.htb</elem>
+<elem key="organizationName">Travel.HTB</elem>
+<elem key="countryName">UK</elem>
+<elem key="localityName">London</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">www.travel.htb</elem>
+<elem key="organizationName">Travel.HTB</elem>
+<elem key="countryName">UK</elem>
+<elem key="localityName">London</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">userdata: 0x559ba2926b68</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">userdata: 0x559ba2926ba8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">DNS:www.travel.htb, DNS:blog.travel.htb, DNS:blog-dev.travel.htb</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-04-23T19:24:29</elem>
+<elem key="notAfter">2030-04-21T19:24:29</elem>
+</table>
+<elem key="md5">ef0aa4c1fbad1ac4d16058e3beac9698</elem>
+<elem key="sha1">01707c30db3e2a93cda77bbe8a8b77775bcd0498</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDaTCCAlGgAwIBAgIUCVtOR+HI2VGnWpCcIexOKkdfW6EwDQYJKoZIhvcNAQEL&#xa;BQAwTDELMAkGA1UEBhMCVUsxDzANBgNVBAcMBkxvbmRvbjETMBEGA1UECgwKVHJh&#xa;dmVsLkhUQjEXMBUGA1UEAwwOd3d3LnRyYXZlbC5odGIwHhcNMjAwNDIzMTkyNDI5&#xa;WhcNMzAwNDIxMTkyNDI5WjBMMQswCQYDVQQGEwJVSzEPMA0GA1UEBwwGTG9uZG9u&#xa;MRMwEQYDVQQKDApUcmF2ZWwuSFRCMRcwFQYDVQQDDA53d3cudHJhdmVsLmh0YjCC&#xa;ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANngVuDtQWdsYXq3aJoHohT9&#xa;g1+H91furbuP8ofkwxdyyk84DsL+FbqTPi1mRqCzc9r5kmMOwXnk95Ah3/k5TKlg&#xa;Au9EmAKMtPryO7Mw0jhqmzmVEDBd2kI3zpbvd/UfYcSCY8QRs8qW6A3LJzRno6nC&#xa;gNh5IjF86IU4CtGRs68isoKhR5ziCg7KJFSS7HJZDXje87d0tN6UrSgfdv1N4wVd&#xa;AbOtYUCZqwZjUpJB2HKSSgrUi7yusvjgwry9Zctui+T0RTMAermAGBJKPlewgRlf&#xa;6JXdVlSR+M0ejBINOsnBWEtB9Al2utOFR3Kz0nfLuue3N445CzjenogpaVEEKukC&#xa;AwEAAaNDMEEwPwYDVR0RBDgwNoIOd3d3LnRyYXZlbC5odGKCD2Jsb2cudHJhdmVs&#xa;Lmh0YoITYmxvZy1kZXYudHJhdmVsLmh0YjANBgkqhkiG9w0BAQsFAAOCAQEAaxTe&#xa;o4uS0zyUItle179Ik8nKmHNpP23SsRKxaXINvqjKGDPobSE8A2D2/B+tN7CAYmkm&#xa;V6+Z+Vpp7OcOTuVc6utAWovYdH1da1J1a59i42a7Ni+IxCTy3dOJUBggG7RgDf8f&#xa;n/Ug/pPePACy9Bcc1GvhCAhCc8YG8KTShVoF+Pd44OZDgzbm41hLuIm6OKc7fm97&#xa;5hu0VnVvzFlAD9X98DbqZDQItUFqH3/ma5vJzMOwoB+2R40aW4YUHaFtUsDeWYCg&#xa;hU5NoWd+DeWVDbTJcTJH5JCONq44+HTV4dUxoyjdqyQLAR2YuqIFbKF0ohixz6n1&#xa;9/2fFKw7v7U/VFDpwA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="67776" rttvar="31" to="67900"/>
+</host>
+<runstats><finished time="1590465395" timestr="Mon May 25 20:56:35 2020" elapsed="381.86" summary="Nmap done at Mon May 25 20:56:35 2020; 1 IP address (1 host up) scanned in 381.86 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu May 14 16:05:00 2020 as: nmap -A -p- -oA nmap/allports 10.10.10.148 -->
+<nmaprun scanner="nmap" args="nmap -A -p- -oA nmap/allports 10.10.10.148" start="1589486700" startstr="Thu May 14 16:05:00 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="Connect Scan" time="1589493946" percent="70.49" remaining="3033" etc="1589496979"/>
+<taskprogress task="Connect Scan" time="1589493948" percent="70.51" remaining="3032" etc="1589496979"/>
+<taskprogress task="Connect Scan" time="1589494215" percent="73.03" remaining="2776" etc="1589496991"/>
+<host starttime="1589486701" endtime="1589497286"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.10.148" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="conn-refused" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 56:84:89:b6:8f:0a:73:71:7f:b3:dc:31:45:59:0e:2e (RSA)&#xa;  256 76:43:79:bc:d7:cd:c7:c7:03:94:09:ab:1f:b7:b8:2e (ECDSA)&#xa;  256 b3:7d:1c:27:3a:c1:78:9d:aa:11:f7:c6:50:57:25:5e (ED25519)"><table>
+<elem key="fingerprint">568489b68f0a73717fb3dc3145590e2e</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCV8wFEv/PCRUs+CxIvxTP1+IlNdlo7bDO+wke2x6Imb/sr9qM5jfV8Fe9lwAgpW348vCZYzqQckfwlZAIqHlypSBjCOalRbxo54DWZOpkCk6kBq5JtCfov2jdiyuc07bSEESKDf3iwNaDGJ+EaLQWWxsc6hRAbqH95rPEQaYf1iV4m6kfwGNHEgEJEXP7oEEsqhvOYJuUZf3ToSWownOrCEcDJWw8l9X85LjDfZYd4uiB/1OcQScFc89KZFEu9uPBbpwGpI97WUtsJ6b/VZCKw+rU3WTUgICqcIhh+YyeQDqnSKuO/LrWQmg9rssZhdZ2OsFsSbqcaVGeenJuON8OX</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="fingerprint">764379bcd7cdc7c7039409ab1fb7b82e</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCKaOC8SBPr23SdizCGRopkroTzDFMI4T1xXBDFtQTiRWTVGc+Vq++UU9zz8shHHfGcyYx3bvWGG4yoh2rKHBP4=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">b37d1c273ac1789daa11f7c65057255e</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIB39nJRknCn9oMswzN8RW6xZQs5GB3+VNyBRY1Lk4tWA</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="9999"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="abyss" servicefp="SF-Port9999-TCP:V=7.80%I=7%D=5/14%Time=5EBDCD28%P=x86_64-pc-linux-gnu%r(GetRequest,1378,&quot;HTTP/1\.1\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nCache-Control:\x20no-cache\r\nContent-length:\x204871\r\nContent-type:\x20text/html\r\n\r\n&lt;!DOCTYPE\x20html&gt;\r\n&lt;html\x20lang=\&quot;en\&quot;&gt;\r\n&lt;head&gt;\r\n\t&lt;title&gt;Login\x20V10&lt;/title&gt;\r\n\t&lt;meta\x20charset=\&quot;UTF-8\&quot;&gt;\r\n\t&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\r\n&lt;!-&#45;===============================================================================================-&#45;&gt;\t\r\n\t&lt;link\x20rel=\&quot;icon\&quot;\x20type=\&quot;image/png\&quot;\x20href=\&quot;images/icons/favicon\.ico\&quot;/&gt;\r\n&lt;!-&#45;===============================================================================================-&#45;&gt;\r\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20type=\&quot;text/css\&quot;\x20href=\&quot;vendor/bootstrap/css/bootstrap\.min\.css\&quot;&gt;\r\n&lt;!-&#45;===============================================================================================-&#45;&gt;\r\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20type=\&quot;text/css\&quot;\x20href=\&quot;fonts/font-awesome-4\.7\.0/css/font-awesome\.min\.css\&quot;&gt;\r\n&lt;!-&#45;===============================================&quot;)%r(HTTPOptions,1378,&quot;HTTP/1\.1\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nCache-Control:\x20no-cache\r\nContent-length:\x204871\r\nContent-type:\x20text/html\r\n\r\n&lt;!DOCTYPE\x20html&gt;\r\n&lt;html\x20lang=\&quot;en\&quot;&gt;\r\n&lt;head&gt;\r\n\t&lt;title&gt;Login\x20V10&lt;/title&gt;\r\n\t&lt;meta\x20charset=\&quot;UTF-8\&quot;&gt;\r\n\t&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\r\n&lt;!-&#45;===============================================================================================-&#45;&gt;\t\r\n\t&lt;link\x20rel=\&quot;icon\&quot;\x20type=\&quot;image/png\&quot;\x20href=\&quot;images/icons/favicon\.ico\&quot;/&gt;\r\n&lt;!-&#45;===============================================================================================-&#45;&gt;\r\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20type=\&quot;text/css\&quot;\x20href=\&quot;vendor/bootstrap/css/bootstrap\.min\.css\&quot;&gt;\r\n&lt;!-&#45;===============================================================================================-&#45;&gt;\r\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20type=\&quot;text/css\&quot;\x20href=\&quot;fonts/font-awesome-4\.7\.0/css/font-awesome\.min\.css\&quot;&gt;\r\n&lt;!-&#45;===============================================&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 200 OK&#xa;    Accept-Ranges: bytes&#xa;    Cache-Control: no-cache&#xa;    Content-length: 4871&#xa;    Content-type: text/html&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Login V10&lt;/title&gt;&#xa;    &lt;meta charset=&quot;UTF-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;!-&#45;===============================================================================================-&#45;&gt; &#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;images/icons/favicon.ico&quot;/&gt;&#xa;    &lt;!-&#45;===============================================================================================-&#45;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;vendor/bootstrap/css/bootstrap.min.css&quot;&gt;&#xa;    &lt;!-&#45;===============================================================================================-&#45;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;fonts/font-awesome-4.7.0/css/font-awesome.min.css&quot;&gt;&#xa;    &lt;!-&#45;==============================================="><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 200 OK&#xa;    Accept-Ranges: bytes&#xa;    Cache-Control: no-cache&#xa;    Content-length: 4871&#xa;    Content-type: text/html&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Login V10&lt;/title&gt;&#xa;    &lt;meta charset=&quot;UTF-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;!-&#45;===============================================================================================-&#45;&gt; &#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;images/icons/favicon.ico&quot;/&gt;&#xa;    &lt;!-&#45;===============================================================================================-&#45;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;vendor/bootstrap/css/bootstrap.min.css&quot;&gt;&#xa;    &lt;!-&#45;===============================================================================================-&#45;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;fonts/font-awesome-4.7.0/css/font-awesome.min.css&quot;&gt;&#xa;    &lt;!-&#45;===============================================</elem>
+</script></port>
+</ports>
+<times srtt="385668" rttvar="242755" to="1356688"/>
+</host>
+<runstats><finished time="1589497286" timestr="Thu May 14 19:01:26 2020" elapsed="10585.80" summary="Nmap done at Thu May 14 19:01:26 2020; 1 IP address (1 host up) scanned in 10585.80 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

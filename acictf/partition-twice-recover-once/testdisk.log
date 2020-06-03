@@ -1,0 +1,318 @@
+
+
+Fri May  1 10:53:28 2020
+Command line: TestDisk
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.5.0-kali2-amd64 (#1 SMP Debian 5.5.17-1kali1 (2020-04-21)) x86_64
+Compiler: GCC 9.2
+ext2fs lib: 1.45.6, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+User is not root!
+Hard disk list
+
+
+TestDisk exited normally.
+Using locale 'en_US.utf8'.
+
+
+Fri May  1 10:53:28 2020
+Command line: TestDisk /debug
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.5.0-kali2-amd64 (#1 SMP Debian 5.5.17-1kali1 (2020-04-21)) x86_64
+Compiler: GCC 9.2
+ext2fs lib: 1.45.6, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+/dev/sda: LBA, LBA48 support
+/dev/sda: size       167772160 sectors
+/dev/sda: user_max   167772160 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop2 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop3 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop4 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop5 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop6 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop7 - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 85 GB / 80 GiB - CHS 10443 255 63, sector size=512 - VBOX HARDDISK, S/N:VB9eb40ceb-72bcff4d, FW:1.0
+Disk /dev/loop0 - 149 MB / 142 MiB - 292688 sectors (RO), sector size=512
+Disk /dev/loop1 - 98 MB / 93 MiB - 192352 sectors (RO), sector size=512
+
+
+TestDisk exited normally.
+Using locale 'en_US.utf8'.
+
+
+Fri May  1 10:55:51 2020
+Command line: TestDisk /log image.bin
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.5.0-kali2-amd64 (#1 SMP Debian 5.5.17-1kali1 (2020-04-21)) x86_64
+Compiler: GCC 9.2
+ext2fs lib: 1.45.6, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+User is not root!
+Hard disk list
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63, sector size=512
+
+Partition table type (auto): None
+Disk image.bin - 4194 KB / 4096 KiB
+Partition table type: None
+
+Interface Advanced
+Filesystem created: Mon Nov 11 07:10:47 2019
+   P ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+
+ext2fs_dir_iterate failed with error 2133571402.
+Directory /
+search_superblock
+Filesystem created: Mon Nov 11 07:10:47 2019
+Ext2 superblock found at sector 2 (block=1, blocksize=1024)
+  ext4                     0   0  1     0 130  2       8192
+superblock 0, blocksize=1024 []
+
+To repair the filesystem using alternate superblock, run
+fsck.ext4 -p -b superblock -B blocksize device
+Change partition type:
+   P Unknown                  0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+Change partition type:
+   P Unknown                  0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+
+Analyse Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+Current partition structure:
+   P ext4                     0   0  1     0 130  2       8192
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+     Linux LUKS               0  32 33     0  97 33       4096
+     LUKS 1 (Data size unknown), 2097 KB / 2048 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+   P Linux LUKS               0  32 33     0  97 33       4096
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+Analyse Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+Current partition structure:
+   P ext4                     0   0  1     0 130  2       8192
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+     Linux LUKS               0  32 33     0  97 33       4096
+     LUKS 1 (Data size unknown), 2097 KB / 2048 KiB
+Change partition type:
+   P Unknown                  0  32 33     0  97 33       4096
+     LUKS 1 (Data size unknown), 2097 KB / 2048 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+   P Unknown                  0  32 33     0  97 33       4096
+ 
+Write isn't available because the partition table type "None" has been selected.
+Change partition type:
+   P ext4                     0  32 33     0  97 33       4096
+     LUKS 1 (Data size unknown), 2097 KB / 2048 KiB
+
+   P ext4                     0  32 33     0  97 33       4096
+     LUKS 1 (Data size unknown), 2097 KB / 2048 KiB
+Can't open filesystem. Filesystem seems damaged.
+Change partition type:
+   P Linux LUKS               0  32 33     0  97 33       4096
+     LUKS 1 (Data size unknown), 2097 KB / 2048 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+   P Linux LUKS               0  32 33     0  97 33       4096
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+Analyse Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+Current partition structure:
+   P ext4                     0   0  1     0 130  2       8192
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+Change partition type:
+   P Unknown                  0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+
+interface_write()
+   P Unknown                  0   0  1     0 130  2       8192
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+     Linux LUKS               0  32 33     0  97 33       4096
+     LUKS 1 (Data size unknown), 2097 KB / 2048 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+   P Linux LUKS               0  32 33     0  97 33       4096
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+Analyse Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+Current partition structure:
+   P ext4                     0   0  1     0 130  2       8192
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+     Linux LUKS               0  32 33     0  97 33       4096
+     LUKS 1 (Data size unknown), 2097 KB / 2048 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+   P Linux LUKS               0  32 33     0  97 33       4096
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+Interface Advanced
+Filesystem created: Mon Nov 11 07:10:47 2019
+   P ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+
+ext2fs_dir_iterate failed with error 2133571402.
+Directory /
+search_superblock
+Filesystem created: Mon Nov 11 07:10:47 2019
+Ext2 superblock found at sector 2 (block=1, blocksize=1024)
+  ext4                     0   0  1     0 130  2       8192
+superblock 0, blocksize=1024 []
+
+To repair the filesystem using alternate superblock, run
+fsck.ext4 -p -b superblock -B blocksize device
+Change partition type:
+   P f2fs                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+
+Analyse Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+Current partition structure:
+   P ext4                     0   0  1     0 130  2       8192
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+
+ext2fs_dir_iterate failed with error 2133571402.
+Directory /
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+     Linux LUKS               0  32 33     0  97 33       4096
+     LUKS 1 (Data size unknown), 2097 KB / 2048 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+   P Linux LUKS               0  32 33     0  97 33       4096
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+   P Linux LUKS               0  32 33     0  97 33       4096
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+Analyse Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+Current partition structure:
+   P ext4                     0   0  1     0 130  2       8192
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+search_part()
+Disk image.bin - 4194 KB / 4096 KiB - CHS 1 255 63
+Filesystem created: Mon Nov 11 07:10:47 2019
+     ext4                     0   0  1     0 130  2       8192
+     ext4 blocksize=1024 Large_file Sparse_SB, 4194 KB / 4096 KiB
+     Linux LUKS               0  32 33     0  97 33       4096
+     LUKS 1 (Data size unknown), 2097 KB / 2048 KiB
+
+interface_write()
+   P ext4                     0   0  1     0 130  2       8192
+   P Linux LUKS               0  32 33     0  97 33       4096
+ 
+Write isn't available because the partition table type "None" has been selected.
+
+TestDisk exited normally.

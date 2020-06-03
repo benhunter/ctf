@@ -1,0 +1,21 @@
+
+Scalpel version 1.60 audit file
+Started at Fri May  1 12:52:58 2020
+Command line:
+scalpel -b ../image.bin 
+
+Output directory: /home/kali/acictf/partition-twice-recover-once/scalpel/scalpel-output
+Configuration file: /etc/scalpel/scalpel.conf
+
+Opening target "H="
+
+The following files were carved:
+File		  Start			Chop		Length		Extracted From
+ERROR: The configuration file didn't specify any file types to carve.
+(If you're using the default configuration file, you'll have to
+uncomment some of the file types.)
+
+See /etc/scalpel/scalpel.conf.
+
+
+Completed at Fri May  1 12:52:58 2020
